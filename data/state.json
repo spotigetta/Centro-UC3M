@@ -1,0 +1,2120 @@
+{
+  "version": 1,
+  "updated": "2026-10-01T17:23:53.566Z",
+  "subjects": [
+    {
+      "id": "calor-frio",
+      "name": "Calor y Frío Industrial",
+      "color": "#c14838",
+      "icon": "flame",
+      "campusURL": "https://aulaglobal.uc3m.es/course/view.php?id=206184",
+      "chatURL": "https://chatgpt.com/g/g-p-68c823ca97d08191942e8cd5cf5335da/project"
+    },
+    {
+      "id": "estructuras",
+      "name": "Ingeniería Estructural",
+      "color": "#754b82",
+      "icon": "building-2",
+      "campusURL": "https://aulaglobal.uc3m.es/course/view.php?id=206193",
+      "chatURL": "https://chatgpt.com/g/g-p-68c92b4c7db8819185ac64177d8d7bb1/project"
+    },
+    {
+      "id": "fuentes",
+      "name": "Fuentes de Energía",
+      "color": "#177a63",
+      "icon": "zap",
+      "campusURL": "https://aulaglobal.uc3m.es/course/view.php?id=206232",
+      "chatURL": "https://chatgpt.com/g/g-p-6abac67e12108191a57b13c7eaa40a82/project"
+    },
+    {
+      "id": "fabricacion",
+      "name": "Sistemas Integrados de Fabricación",
+      "color": "#0d6a89",
+      "icon": "factory",
+      "campusURL": "https://aulaglobal.uc3m.es/course/view.php?id=206233",
+      "chatURL": "https://chatgpt.com/g/g-p-6abacde7c70c81919d1d1bbf077dd0a5/project"
+    },
+    {
+      "id": "adye",
+      "name": "Ampliación de Diseño y Ensayo de Máquinas",
+      "color": "#b66b16",
+      "icon": "cog",
+      "campusURL": "https://aulaglobal.uc3m.es/course/view.php?id=206238",
+      "chatURL": "https://chatgpt.com/g/g-p-6aba871c02c48191b1929ffd2dc981f4/project"
+    },
+    {
+      "id": "dspl",
+      "name": "Diseño de Sistemas Productivos y Logísticos",
+      "color": "#364ba1",
+      "icon": "boxes",
+      "campusURL": "https://aulaglobal.uc3m.es/course/view.php?id=206242",
+      "chatURL": "https://chatgpt.com/g/g-p-6abacec91d2481918eaca1af569bda40/project"
+    }
+  ],
+  "groups": {},
+  "cards": [
+    {
+      "id": "d328f2e6-edad-44f2-908d-7816e42c5b9c",
+      "title": "Preparar parcial 4 oct",
+      "checked": true,
+      "lane": "Entrada",
+      "meta": {
+        "id": "d328f2e6-edad-44f2-908d-7816e42c5b9c",
+        "area": "Calor y Frío Industrial",
+        "priority": "Media",
+        "pdca": "",
+        "areas": [
+          "Calor y Frío Industrial"
+        ],
+        "due": "2026-10-04",
+        "start": "",
+        "time": "",
+        "repeat": "",
+        "weekdays": [],
+        "monthday": 1,
+        "until": "",
+        "project": "",
+        "links": ""
+      }
+    }
+  ],
+  "projects": [],
+  "dataset": {
+    "version": 1,
+    "updated": "2026-10-01T16:24:19.255Z",
+    "courses": {
+      "calor-frio": {
+        "name": "Calor y Frío Industrial",
+        "source": "calefaccion_frio_industrial_2026_2027.json",
+        "evaluation": [
+          {
+            "name": "Práctica de cargas térmicas",
+            "weight": 15,
+            "detail": ""
+          },
+          {
+            "name": "Cuestionario presencial de cargas térmicas",
+            "weight": 10,
+            "detail": ""
+          },
+          {
+            "name": "Práctica de frío industrial",
+            "weight": 15,
+            "detail": ""
+          },
+          {
+            "name": "Examen ordinario",
+            "weight": 60,
+            "detail": "Todo el temario salvo el tema de cargas térmicas."
+          }
+        ],
+        "rules": [
+          "Mínimo 4,5/10 en el examen para combinar con la evaluación continua.",
+          "Prácticas recomendadas; puede entregarse el resultado sin asistir."
+        ],
+        "practices": [
+          {
+            "title": "Práctica de cargas térmicas",
+            "date": "2026-10-16",
+            "note": "Consultar horarios",
+            "dateInferred": true
+          },
+          {
+            "title": "Práctica de frío industrial",
+            "date": "2026-12-11",
+            "note": "Consultar horarios",
+            "dateInferred": true
+          }
+        ],
+        "topics": [
+          {
+            "number": 1,
+            "title": "Cargas térmicas"
+          },
+          {
+            "number": 2,
+            "title": "Cargas térmicas"
+          },
+          {
+            "number": 3,
+            "title": "Intercambiadores de calor (incluye torres)"
+          },
+          {
+            "number": 4,
+            "title": "Test de cargas térmicas"
+          },
+          {
+            "number": 5,
+            "title": "Intercambiadores de calor (incluye torres)"
+          },
+          {
+            "number": 6,
+            "title": "Intercambiadores de calor (incluye torres)"
+          },
+          {
+            "number": 7,
+            "title": "Intercambiadores de calor (incluye torres)"
+          },
+          {
+            "number": 8,
+            "title": "Calor industrial: calderas"
+          },
+          {
+            "number": 9,
+            "title": "Calor industrial: calderas"
+          },
+          {
+            "number": 10,
+            "title": "Calor industrial: calderas"
+          },
+          {
+            "number": 11,
+            "title": "Calor industrial: calderas"
+          },
+          {
+            "number": 12,
+            "title": "Frío industrial"
+          },
+          {
+            "number": 13,
+            "title": "Frío industrial"
+          },
+          {
+            "number": 14,
+            "title": "Problemas de repaso"
+          }
+        ]
+      },
+      "estructuras": {
+        "name": "Ingeniería Estructural",
+        "source": "ingenieria_estructural_2026_2027.json",
+        "evaluation": [
+          {
+            "name": "Prueba de evaluación continua",
+            "weight": 25,
+            "detail": ""
+          },
+          {
+            "name": "Trabajo de prácticas",
+            "weight": 15,
+            "detail": "Trabajo relativo al diseño de una estructura empleando MEF."
+          },
+          {
+            "name": "Examen ordinario",
+            "weight": 60,
+            "detail": "Para aprobar la asignatura teniendo en cuenta la evaluación continua."
+          },
+          {
+            "name": "Examen extraordinario",
+            "weight": null,
+            "detail": "Para aprobar la asignatura teniendo en cuenta la evaluación continua."
+          }
+        ],
+        "rules": [
+          "La asistencia a las dos sesiones es obligatoria.",
+          "La entrega del trabajo es obligatoria.",
+          "El alumnado que ya realizó las prácticas en cursos anteriores puede conservar su nota y no repetirlas si lo desea.",
+          "Las instrucciones de inscripción en los grupos se enviarán por correo electrónico."
+        ],
+        "practices": [
+          {
+            "title": "Diseño y optimización de una estructura",
+            "date": "",
+            "note": "2 sesiones de 2 h · grupos de 2–3 personas; fecha pendiente"
+          }
+        ],
+        "topics": [
+          {
+            "number": 0,
+            "title": "Capítulo 0. Conceptos fundamentales previos"
+          },
+          {
+            "number": 1,
+            "title": "Capítulo I. Herramientas de análisis estructural"
+          },
+          {
+            "number": 2,
+            "title": "Capítulo II. Métodos de cálculo de estructuras articuladas"
+          },
+          {
+            "number": 3,
+            "title": "Capítulo III. Métodos de cálculo de estructuras reticuladas"
+          },
+          {
+            "number": 4,
+            "title": "Capítulo IV. Métodos matriciales de análisis estructural"
+          }
+        ]
+      },
+      "fuentes": {
+        "name": "Fuentes de Energía",
+        "source": "fuentes_energia_2026_2027.json",
+        "evaluation": [
+          {
+            "name": "Diseño de instalación solar de baja temperatura",
+            "weight": 10,
+            "detail": ""
+          },
+          {
+            "name": "Diseño de instalación solar fotovoltaica",
+            "weight": 10,
+            "detail": "Una semana después de la sesión presencial de prácticas"
+          },
+          {
+            "name": "Presentación de póster sobre una noticia relacionada con el temario",
+            "weight": 30,
+            "detail": ""
+          },
+          {
+            "name": "Examen final, convocatoria ordinaria",
+            "weight": 50,
+            "detail": ""
+          },
+          {
+            "name": "Examen final, convocatoria extraordinaria",
+            "weight": null,
+            "detail": ""
+          }
+        ],
+        "rules": [
+          "Mínimo 4/10 en el examen final y 5/10 en total."
+        ],
+        "practices": [
+          {
+            "title": "Diseño de instalación solar de baja temperatura",
+            "date": "",
+            "note": "Al finalizar la sesión presencial de prácticas"
+          },
+          {
+            "title": "Diseño de instalación solar fotovoltaica",
+            "date": "",
+            "note": "Una semana después de la sesión presencial de prácticas"
+          },
+          {
+            "title": "Presentación de póster sobre una noticia relacionada con el temario",
+            "date": "",
+            "note": ""
+          }
+        ],
+        "topics": [
+          {
+            "number": 1,
+            "title": "Presentación. Introducción"
+          },
+          {
+            "number": 2,
+            "title": "Energía solar: introducción"
+          },
+          {
+            "number": 3,
+            "title": "Energía solar: baja temperatura"
+          },
+          {
+            "number": 4,
+            "title": "Energía solar: baja temperatura"
+          },
+          {
+            "number": 5,
+            "title": "Energía solar: alta temperatura"
+          },
+          {
+            "number": 6,
+            "title": "Energía solar: fotovoltaica"
+          },
+          {
+            "number": 7,
+            "title": "Energía solar: fotovoltaica extra"
+          },
+          {
+            "number": 8,
+            "title": "Energía nuclear"
+          },
+          {
+            "number": 9,
+            "title": "Combustibles fósiles"
+          },
+          {
+            "number": 10,
+            "title": "Biomasa S1"
+          },
+          {
+            "number": 11,
+            "title": "Biomasa S2"
+          },
+          {
+            "number": 12,
+            "title": "Hidrógeno como fuente de energía"
+          },
+          {
+            "number": 13,
+            "title": "Energía eólica"
+          },
+          {
+            "number": 14,
+            "title": "Hidráulica y geotermia"
+          },
+          {
+            "number": 15,
+            "title": "Presentaciones de póster"
+          }
+        ]
+      },
+      "dspl": {
+        "name": "Diseño de Sistemas Productivos y Logísticos",
+        "source": "dspl_condiciones_evaluacion_cronograma_2026_2027.json",
+        "evaluation": [
+          {
+            "name": "Actividades en clase",
+            "weight": 15,
+            "detail": ""
+          },
+          {
+            "name": "Examen parcial",
+            "weight": 25,
+            "detail": ""
+          },
+          {
+            "name": "Examen final",
+            "weight": 60,
+            "detail": ""
+          }
+        ],
+        "rules": [
+          "Mínimo 4/10 en el examen final y 5/10 global.",
+          "Con 6,5/10 en el parcial se pueden liberar los temas 1–3 si se comunica al profesor.",
+          "Las prácticas de ordenador no exigen asistencia, pero su contenido es evaluable."
+        ],
+        "practices": [
+          {
+            "title": "Prácticas de ordenador",
+            "date": "",
+            "note": "3 sesiones; fecha pendiente"
+          }
+        ],
+        "topics": []
+      },
+      "fabricacion": {
+        "name": "Sistemas Integrados de Fabricación",
+        "source": "sistemas_integrados_fabricacion.json",
+        "evaluation": [
+          {
+            "name": "Examen parcial",
+            "weight": 15,
+            "detail": ""
+          },
+          {
+            "name": "Trabajos y exposición en grupo",
+            "weight": 20,
+            "detail": ""
+          },
+          {
+            "name": "Trabajo del caso práctico",
+            "weight": 55,
+            "detail": ""
+          },
+          {
+            "name": "Prácticas 1 y 2",
+            "weight": 10,
+            "detail": ""
+          }
+        ],
+        "rules": [
+          "Además de la evaluación continua, se exige una nota mínima de 3,5 sobre 10 en el examen parcial o en la parte teórica del examen final.",
+          "Asistencia obligatoria al 100 % de las dos prácticas; excepciones justificadas según el documento."
+        ],
+        "practices": [
+          {
+            "title": "Práctica 1 · Detección del desgaste de herramientas en fresado CNC mediante técnicas de machine learning",
+            "date": "",
+            "note": "Grupo 1 o grupos 3–4, según matrícula"
+          },
+          {
+            "title": "Práctica 2 · Programación de fresado 3D mediante herramientas CAD-CAM",
+            "date": "",
+            "note": "Grupo 1 o grupos 3–4, según matrícula"
+          }
+        ],
+        "topics": []
+      },
+      "adye": {
+        "name": "Ampliación de Diseño y Ensayo de Máquinas",
+        "source": "Cronograma ADYE.md",
+        "evaluation": [],
+        "rules": [
+          "El cronograma no incluye ponderaciones; consulta la guía docente para la evaluación."
+        ],
+        "practices": [
+          {
+            "title": "P1 · Práctica de Síntesis de Mecanismos (Doble)",
+            "date": "2026-09-28",
+            "note": "El PDF distribuye los subgrupos 1A/1B, 3A/3B y 4A/4B entre el 28 de septiembre y el 2 de octubre; varios tramos se muestran como DUAL."
+          },
+          {
+            "title": "P2 · Práctica de vibraciones (Doble)",
+            "date": "2026-10-26",
+            "note": "El PDF distribuye los subgrupos entre el 26 y el 30 de octubre."
+          },
+          {
+            "title": "P3 · Práctica de medios ópticos (3 grupos)",
+            "date": "2026-11-16",
+            "note": "El PDF distribuye los subgrupos 1A/1B/1C, 3A/3B/3C y 4A/4B/4C entre el 16 y el 27 de noviembre."
+          },
+          {
+            "title": "P4 · Práctica MMC (Doble)",
+            "date": "2026-11-30",
+            "note": "El PDF distribuye los subgrupos entre el 30 de noviembre y el 4 de diciembre."
+          }
+        ],
+        "topics": [
+          {
+            "number": 1,
+            "title": "Introducción a la Síntesis de Mecanismos"
+          },
+          {
+            "number": 2,
+            "title": "Síntesis Estructural. Síntesis de tipo y número"
+          },
+          {
+            "number": 3,
+            "title": "Síntesis Dimensional Gráfica I"
+          },
+          {
+            "number": 4,
+            "title": "Síntesis Dimensional Gráfica I y Mecanismos Cognados"
+          },
+          {
+            "number": 5,
+            "title": "Síntesis dimensional Empírica"
+          },
+          {
+            "number": 6,
+            "title": "Síntesis dimensional Analítica I"
+          },
+          {
+            "number": 7,
+            "title": "Práctica de Síntesis de Mecanismos (Doble)"
+          },
+          {
+            "number": 8,
+            "title": "Síntesis dimensional Analítica II"
+          },
+          {
+            "number": 9,
+            "title": "Síntesis dimensional Analítica III. Aplicación práctica"
+          },
+          {
+            "number": 10,
+            "title": "Introducción a las Vibraciones Mecánicas"
+          },
+          {
+            "number": 11,
+            "title": "Conceptos generales de las Vibraciones Aleatorias"
+          },
+          {
+            "number": 12,
+            "title": "Aplicación de Vibraciones Aleatorias a Vibraciones en Máquinas"
+          },
+          {
+            "number": 13,
+            "title": "Análisis de Vibraciones en Máquinas"
+          },
+          {
+            "number": 14,
+            "title": "Análisis Modal I"
+          },
+          {
+            "number": 15,
+            "title": "Práctica de vibraciones (Doble)"
+          },
+          {
+            "number": 16,
+            "title": "Análisis Modal II"
+          },
+          {
+            "number": 17,
+            "title": "Análisis Modal Computacional"
+          },
+          {
+            "number": 18,
+            "title": "Problemas análisis modal"
+          },
+          {
+            "number": 19,
+            "title": "Medida y Análisis de Medidas Vibratorias"
+          },
+          {
+            "number": 20,
+            "title": "Fenómenos vibratorios No Lineales"
+          },
+          {
+            "number": 21,
+            "title": "Med. Exp. Def. Medios ópticos I"
+          },
+          {
+            "number": 22,
+            "title": "Med. Exp. Def. Medios ópticos II"
+          },
+          {
+            "number": 23,
+            "title": "Med. Exp. Def. Extensometría"
+          },
+          {
+            "number": 24,
+            "title": "Práctica de medios ópticos (3 grupos)"
+          },
+          {
+            "number": 25,
+            "title": "Problemas Med. Exp. Def."
+          },
+          {
+            "number": 26,
+            "title": "Conceptos metrológicos en ingeniería mecánica I"
+          },
+          {
+            "number": 27,
+            "title": "Conceptos metrológicos en ingeniería mecánica II"
+          },
+          {
+            "number": 28,
+            "title": "Práctica MMC (Doble)"
+          },
+          {
+            "number": 29,
+            "title": "Prob. Metro. I"
+          },
+          {
+            "number": 30,
+            "title": "Prob. Metro. II"
+          },
+          {
+            "number": 31,
+            "title": "Taller MEF"
+          },
+          {
+            "number": 32,
+            "title": "Taller UQ"
+          }
+        ]
+      }
+    },
+    "events": [
+      {
+        "id": "import-17",
+        "subject": "adye",
+        "title": "S7-P1 · Práctica de Síntesis de Mecanismos (Doble)",
+        "date": "2026-09-28",
+        "kind": "Práctica",
+        "tentative": true
+      },
+      {
+        "id": "import-23",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-09-28",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-24",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-09-28",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 1.2.G.01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-6",
+        "subject": "fuentes",
+        "title": "EE1 · G4",
+        "date": "2026-09-29",
+        "kind": "Evaluación",
+        "group": "grupo_4"
+      },
+      {
+        "id": "import-25",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-09-29",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-26",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-09-29",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-27",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-09-29",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-5",
+        "subject": "fuentes",
+        "title": "EE1 · G3",
+        "date": "2026-09-30",
+        "kind": "Evaluación",
+        "group": "grupo_3"
+      },
+      {
+        "id": "import-28",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-09-30",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-29",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-09-30",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-30",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-09-30",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "2.3.D05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-4",
+        "subject": "fuentes",
+        "title": "EE1 · G1",
+        "date": "2026-10-01",
+        "kind": "Evaluación",
+        "group": "grupo_1"
+      },
+      {
+        "id": "import-31",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-01",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-32",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-01",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-33",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-10-02",
+        "kind": "Prácticas",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "INF 1.2.G.02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-34",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-10-02",
+        "kind": "Recuperación",
+        "time": "12:30",
+        "end": "14:00",
+        "room": "INF 1.2.G.02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-35",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-05",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-36",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-10-06",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-37",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-06",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-38",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-10-06",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-39",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-07",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-40",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-07",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-41",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-08",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-42",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-08",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-43",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-10-13",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-44",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-13",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-45",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-10-13",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-46",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-10-13",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-47",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-14",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-48",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-14",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-49",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-14",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "2.3.D05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-50",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-15",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-51",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-15",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-0",
+        "subject": "calor-frio",
+        "title": "Entrega · Práctica de cargas térmicas",
+        "date": "2026-10-16",
+        "kind": "Entrega",
+        "tentative": true
+      },
+      {
+        "id": "import-52",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-10-16",
+        "kind": "Prácticas",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "INF 1.2.G.02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-53",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-10-16",
+        "kind": "Recuperación",
+        "time": "12:30",
+        "end": "14:00",
+        "room": "INF 1.2.G.02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-54",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-19",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-55",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-10-20",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-56",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-20",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-57",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-10-20",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-58",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-21",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-59",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-21",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-2",
+        "subject": "estructuras",
+        "title": "Prueba de evaluación continua · G3, G4, G5",
+        "date": "2026-10-21",
+        "kind": "Prueba",
+        "tentative": true,
+        "time": "19:00"
+      },
+      {
+        "id": "import-60",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-21",
+        "kind": "Recuperación",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "2.3.C02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-3",
+        "subject": "estructuras",
+        "title": "Prueba de evaluación continua · G1, G2",
+        "date": "2026-10-22",
+        "kind": "Prueba",
+        "tentative": true,
+        "time": "12:30"
+      },
+      {
+        "id": "import-61",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-22",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-62",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-22",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-63",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-10-23",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-18",
+        "subject": "adye",
+        "title": "S8-P2 · Práctica de vibraciones (Doble)",
+        "date": "2026-10-26",
+        "kind": "Práctica",
+        "tentative": true
+      },
+      {
+        "id": "import-64",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-26",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-65",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-26",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 1.2.G.01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-66",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-10-27",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-67",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-10-27",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-68",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-10-27",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-69",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-28",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-70",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-28",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-71",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-10-29",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-72",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-10-29",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-73",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-10-30",
+        "kind": "Prácticas",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "INF 1.2.G.02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-12",
+        "subject": "fabricacion",
+        "title": "Práctica 1 · Detección del desgaste de herramientas en fresado CNC mediante técnicas de machine learning · grupos 3 y 4",
+        "date": "2026-11-03",
+        "kind": "Práctica",
+        "group": "grupos_3_y_4"
+      },
+      {
+        "id": "import-16",
+        "subject": "fabricacion",
+        "title": "Examen parcial · grupos 3 y 4",
+        "date": "2026-11-03",
+        "kind": "Prueba",
+        "group": "grupos_3_y_4"
+      },
+      {
+        "id": "import-74",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-11-03",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-75",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-03",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-76",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-11-03",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-77",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-04",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-78",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-04",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-79",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-05",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-80",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-05",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-11",
+        "subject": "fabricacion",
+        "title": "Práctica 1 · Detección del desgaste de herramientas en fresado CNC mediante técnicas de machine learning · grupo 1",
+        "date": "2026-11-06",
+        "kind": "Práctica",
+        "group": "grupo_1"
+      },
+      {
+        "id": "import-15",
+        "subject": "fabricacion",
+        "title": "Examen parcial · grupo 1",
+        "date": "2026-11-06",
+        "kind": "Prueba",
+        "group": "grupo_1"
+      },
+      {
+        "id": "import-81",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-11-06",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-21",
+        "subject": "adye",
+        "title": "Examen parcial",
+        "date": "2026-11-09",
+        "kind": "Examen",
+        "time": "14:00"
+      },
+      {
+        "id": "import-82",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-09",
+        "kind": "Recuperación",
+        "time": "14:00",
+        "end": "15:30",
+        "room": "7.2.J05 / 7.2.J07",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-83",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-09",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-14",
+        "subject": "fabricacion",
+        "title": "Práctica 2 · Programación de fresado 3D mediante herramientas CAD-CAM · grupos 3 y 4",
+        "date": "2026-11-10",
+        "kind": "Práctica",
+        "group": "grupos_3_y_4"
+      },
+      {
+        "id": "import-10",
+        "subject": "dspl",
+        "title": "Examen parcial",
+        "date": "2026-11-10",
+        "kind": "Examen",
+        "time": "14:00"
+      },
+      {
+        "id": "import-84",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-10",
+        "kind": "Recuperación",
+        "time": "14:00",
+        "end": "15:30",
+        "room": "2.3.A06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-85",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-11-10",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-86",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-10",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-87",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-11-10",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-88",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-11",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-89",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-11",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-90",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-12",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-91",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-12",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-13",
+        "subject": "fabricacion",
+        "title": "Práctica 2 · Programación de fresado 3D mediante herramientas CAD-CAM · grupo 1",
+        "date": "2026-11-13",
+        "kind": "Práctica",
+        "group": "grupo_1"
+      },
+      {
+        "id": "import-92",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-11-13",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-19",
+        "subject": "adye",
+        "title": "S11-P3 · Práctica de medios ópticos (3 grupos)",
+        "date": "2026-11-16",
+        "kind": "Práctica",
+        "tentative": true
+      },
+      {
+        "id": "import-93",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-16",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-94",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-11-17",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-95",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-17",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-96",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-11-17",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-97",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-18",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-98",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-18",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-99",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-18",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "LAB 1.1.N04 (Mecánica)",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-100",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-19",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-101",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-19",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-102",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-11-20",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-103",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-23",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-104",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-23",
+        "kind": "Prácticas",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "LAB 1.1.N04 (Mecánica)",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-105",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-23",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "LAB 1.1.N04 (Mecánica)",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-106",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-11-24",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-107",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-24",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-108",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-11-24",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-109",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-25",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-110",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-25",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-111",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-25",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "2.3.D05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-112",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-11-26",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-113",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-11-26",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-114",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-11-27",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-20",
+        "subject": "adye",
+        "title": "S13-P4 · Práctica MMC (Doble)",
+        "date": "2026-11-30",
+        "kind": "Práctica",
+        "tentative": true
+      },
+      {
+        "id": "import-115",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-11-30",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-116",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-12-01",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-117",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-12-01",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.H03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-118",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-12-01",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.F03",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-119",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-12-01",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 1.2.G.03 DUAL",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-120",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2026-12-02",
+        "kind": "Otros",
+        "time": "14:00",
+        "end": "17:00",
+        "room": "INF 7.0.J02 DUAL + TEL",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-121",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-12-02",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-122",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-12-02",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-123",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-12-02",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 1.2.G.03 DUAL",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-124",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-12-03",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-125",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-12-03",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-126",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-12-03",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 7.0.J05 DUAL",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-127",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-12-04",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-9",
+        "subject": "fuentes",
+        "title": "EE3 · G4",
+        "date": "2026-12-08",
+        "kind": "Evaluación",
+        "group": "grupo_4"
+      },
+      {
+        "id": "import-8",
+        "subject": "fuentes",
+        "title": "EE3 · G3",
+        "date": "2026-12-09",
+        "kind": "Evaluación",
+        "group": "grupo_3"
+      },
+      {
+        "id": "import-128",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-12-09",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-129",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-12-09",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-130",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-12-09",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 7.0.J04 DUAL",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-7",
+        "subject": "fuentes",
+        "title": "EE3 · G1",
+        "date": "2026-12-10",
+        "kind": "Evaluación",
+        "group": "grupo_1"
+      },
+      {
+        "id": "import-131",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2026-12-10",
+        "kind": "Teoría",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "4.1.E04",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-132",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2026-12-10",
+        "kind": "Teoría",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "2.3.B05",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-133",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-12-10",
+        "kind": "Prácticas",
+        "time": "19:00",
+        "end": "20:30",
+        "room": "INF 7.0.J04 DUAL",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-1",
+        "subject": "calor-frio",
+        "title": "Entrega · Práctica de frío industrial",
+        "date": "2026-12-11",
+        "kind": "Entrega",
+        "tentative": true
+      },
+      {
+        "id": "import-134",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2026-12-11",
+        "kind": "Teoría",
+        "time": "10:45",
+        "end": "12:15",
+        "room": "7.1.J06",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-135",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-12-14",
+        "kind": "Recuperación",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-136",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2026-12-14",
+        "kind": "Recuperación",
+        "time": "17:15",
+        "end": "18:45",
+        "room": "1.0.B01",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-137",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2026-12-15",
+        "kind": "Recuperación",
+        "time": "15:30",
+        "end": "17:00",
+        "room": "1.0.B02",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-22",
+        "subject": "adye",
+        "title": "Examen",
+        "date": "2026-12-16",
+        "kind": "Examen",
+        "time": "09:00"
+      },
+      {
+        "id": "import-138",
+        "subject": "calor-frio",
+        "title": "Calor y Frío Industrial",
+        "date": "2027-01-11",
+        "kind": "Examen oficial",
+        "time": "10:00",
+        "end": "14:00",
+        "room": "",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-139",
+        "subject": "adye",
+        "title": "Ampliación de Diseño y Ensayo de Máquinas",
+        "date": "2027-01-13",
+        "kind": "Examen oficial",
+        "time": "10:00",
+        "end": "14:00",
+        "room": "",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-140",
+        "subject": "fabricacion",
+        "title": "Sistemas Integrados de Fabricación",
+        "date": "2027-01-15",
+        "kind": "Examen oficial",
+        "time": "10:00",
+        "end": "14:00",
+        "room": "",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-141",
+        "subject": "estructuras",
+        "title": "Ingeniería Estructural",
+        "date": "2027-01-18",
+        "kind": "Examen oficial",
+        "time": "10:00",
+        "end": "14:00",
+        "room": "",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-142",
+        "subject": "fuentes",
+        "title": "Fuentes de Energía",
+        "date": "2027-01-19",
+        "kind": "Examen oficial",
+        "time": "10:00",
+        "end": "14:00",
+        "room": "",
+        "source": "horario_master_2026_2027.json"
+      },
+      {
+        "id": "import-143",
+        "subject": "dspl",
+        "title": "Diseño de Sistemas Productivos y Logísticos",
+        "date": "2027-01-22",
+        "kind": "Examen oficial",
+        "time": "10:00",
+        "end": "14:00",
+        "room": "",
+        "source": "horario_master_2026_2027.json"
+      }
+    ]
+  }
+}
