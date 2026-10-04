@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated": "2026-10-01T17:23:53.566Z",
+  "version": 2,
+  "updated": "2026-10-04T09:06:47.067Z",
   "subjects": [
     {
       "id": "calor-frio",
@@ -79,6 +79,1867 @@
     }
   ],
   "projects": [],
+  "notes": [],
+  "reports": [
+    {
+      "name": "Memoria María",
+      "path": "Informes UC3M/Memoria María.md"
+    },
+    {
+      "name": "Practica 1 Adem",
+      "path": "Informes UC3M/Practica 1 Adem.md"
+    },
+    {
+      "name": "Prueba",
+      "path": "Informes UC3M/Prueba.md"
+    },
+    {
+      "name": "sacd",
+      "path": "Informes UC3M/sacd.md"
+    }
+  ],
+  "files": [
+    {
+      "subject": "calor-frio",
+      "name": "01 - Formulario.md",
+      "path": "Calor y Frío Industrial/01 - Formulario.md"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "02 - wuolah-free-Biblia-Cargas-Termicas.pdf",
+      "path": "Calor y Frío Industrial/02 - wuolah-free-Biblia-Cargas-Termicas.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "03 - wuolah-free-Calderas-ejercicios-y-resumen.pdf",
+      "path": "Calor y Frío Industrial/03 - wuolah-free-Calderas-ejercicios-y-resumen.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "04 - wuolah-free-Compresion-Mecanica-Ejercicio-y-resumen.pdf",
+      "path": "Calor y Frío Industrial/04 - wuolah-free-Compresion-Mecanica-Ejercicio-y-resumen.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "05 - wuolah-free-EXAMENES-FORMA-DE-PENSAR.pdf",
+      "path": "Calor y Frío Industrial/05 - wuolah-free-EXAMENES-FORMA-DE-PENSAR.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "06 - wuolah-free-Problema-Cargas-Termicas.pdf",
+      "path": "Calor y Frío Industrial/06 - wuolah-free-Problema-Cargas-Termicas.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "07 - wuolah-free-resumenclaveCyF (1).pdf",
+      "path": "Calor y Frío Industrial/07 - wuolah-free-resumenclaveCyF (1).pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "08 - wuolah-free-resumenclaveCyF.pdf",
+      "path": "Calor y Frío Industrial/08 - wuolah-free-resumenclaveCyF.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "09 - wuolah-free-Resumen-Torres-De-Refrigeracion.pdf",
+      "path": "Calor y Frío Industrial/09 - wuolah-free-Resumen-Torres-De-Refrigeracion.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "10 - wuolah-free-TEMA-1.-CARGAS-TERMICAS.pdf",
+      "path": "Calor y Frío Industrial/10 - wuolah-free-TEMA-1.-CARGAS-TERMICAS.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "11 - wuolah-free-Teroria-CyF.pdf",
+      "path": "Calor y Frío Industrial/11 - wuolah-free-Teroria-CyF.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CyF_Presentacion2026_2027.pdf",
+      "path": "Calor y Frío Industrial/CyF_Presentacion2026_2027.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CFI_Extraordinaria_2024_2025_solución.pdf",
+      "path": "Calor y Frío Industrial/exámenes/CFI_Extraordinaria_2024_2025_solución.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2013-2014 extraordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2013-2014 extraordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2013-2014 ordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2013-2014 ordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2016-2017 extraordinaria  enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2016-2017 extraordinaria  enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2017-2018 extraordinaria  P1 enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2017-2018 extraordinaria  P1 enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2017-2018 extraordinario P2 enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2017-2018 extraordinario P2 enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2018-2019 extraordinario P1 enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2018-2019 extraordinario P1 enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2018-2019 extraordinario P2 enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2018-2019 extraordinario P2 enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2018-2019_ordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2018-2019_ordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2019-2020 Solucion ordinario.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2019-2020 Solucion ordinario.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2019-2020_extraordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2019-2020_extraordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2020-2021_extraordinario enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2020-2021_extraordinario enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2020-2021_ordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2020-2021_ordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2021-2022_extraordinario enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2021-2022_extraordinario enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2021-2022_ordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2021-2022_ordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2022-2023_extraordinario enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2022-2023_extraordinario enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2022-2023_ordinario enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2022-2023_ordinario enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Examen CFI 2023-2024_ordinaria enunciado_sol.pdf",
+      "path": "Calor y Frío Industrial/exámenes/Examen CFI 2023-2024_ordinaria enunciado_sol.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "568040-certificacion25100211378.pdf",
+      "path": "Calor y Frío Industrial/Prácticas/568040-certificacion25100211378.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "568040-Verificacion2510021028.pdf",
+      "path": "Calor y Frío Industrial/Prácticas/568040-Verificacion2510021028.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "FrioInd.sm",
+      "path": "Calor y Frío Industrial/Prácticas/FrioInd.sm"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "FrioIndpABLO.sm",
+      "path": "Calor y Frío Industrial/Prácticas/FrioIndpABLO.sm"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "FrioIndpABLOPrueba.sm",
+      "path": "Calor y Frío Industrial/Prácticas/FrioIndpABLOPrueba.sm"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "FrioIndpABLOvariable.sm",
+      "path": "Calor y Frío Industrial/Prácticas/FrioIndpABLOvariable.sm"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "guion HULC 2025-2026.pdf",
+      "path": "Calor y Frío Industrial/Prácticas/guion HULC 2025-2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Guion práctica frío industrial.pdf",
+      "path": "Calor y Frío Industrial/Prácticas/Guion práctica frío industrial.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-A_DB-HE-1_Calculo_de_parametros_caracteristicos_de_la_envolvente (Enero 2020).pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-A_DB-HE-1_Calculo_de_parametros_caracteristicos_de_la_envolvente (Enero 2020).pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-DBHE (2022).pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-DBHE (2022).pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-DBHS (2022).pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-DBHS (2022).pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-Diagrama Psicrometrico.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-Diagrama Psicrometrico.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-propiedades_CTE_corto.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-propiedades_CTE_corto.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-RITE.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-RITE.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-UNE100001.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-UNE100001.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "adoc-UNE100014_corregido.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/adoc-UNE100014_corregido.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250924131353.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250924131353.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250924131406.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250924131406.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250924131416.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250924131416.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250926112502.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250926112502.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250926112516.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250926112516.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250926113008.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250926113008.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250926114930.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250926114930.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20250926114941.png",
+      "path": "Calor y Frío Industrial/Tema 1/Anexo/Pasted image 20250926114941.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Cuestionario.md",
+      "path": "Calor y Frío Industrial/Tema 1/Cuestionario.md"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Presentación_Cargas_Termicas_2025-2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/Presentación_Cargas_Termicas_2025-2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Problemas_cargas_termicas_2024_2025.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/Problemas_cargas_termicas_2024_2025.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Solucion_probl1_cargas_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/Solucion_probl1_cargas_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Solucion_probl2_cargas_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 1/Solucion_probl2_cargas_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Tema 1.md",
+      "path": "Calor y Frío Industrial/Tema 1/Tema 1.md"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112114034.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251112114034.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112121956.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251112121956.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223120022.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223120022.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223120045.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223120045.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223120127.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223120127.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223120138.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223120138.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223120453.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223120453.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223121130.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223121130.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223121158.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223121158.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223121218.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223121218.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251223121642.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo/Pasted image 20251223121642.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107124627.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107124627.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107125137.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107125137.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107130722.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107130722.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107130814.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107130814.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107130938.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107130938.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107130950.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107130950.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107131124.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107131124.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107131244.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107131244.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107131416.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107131416.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251107131528.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251107131528.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112114007.png",
+      "path": "Calor y Frío Industrial/Tema 2/Anexo  Torres/Pasted image 20251112114007.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CFI_problemas_intercambiadores_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/CFI_problemas_intercambiadores_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "diagrama_psicrométrico.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/diagrama_psicrométrico.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "intercambiadores de calor_2023_2024.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/intercambiadores de calor_2023_2024.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "sol_problema torre híbrida_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/sol_problema torre híbrida_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "sol_problemas intercambiadores de calor_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/sol_problemas intercambiadores de calor_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Tema 2 Intercambiadores Capturas.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/Tema 2 Intercambiadores Capturas.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Tema 2 Intercambiadores.md",
+      "path": "Calor y Frío Industrial/Tema 2/Tema 2 Intercambiadores.md"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Tema 2 Torres de refrigeración Capturas.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/Tema 2 Torres de refrigeración Capturas.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Tema 2 Torres de refrigeración.md",
+      "path": "Calor y Frío Industrial/Tema 2/Tema 2 Torres de refrigeración.md"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "torres_2024_2025.pdf",
+      "path": "Calor y Frío Industrial/Tema 2/torres_2024_2025.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112114939.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112114939.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112115604.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112115604.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112115630.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112115630.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112115656.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112115656.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112115725.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112115725.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112115745.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112115745.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112120005.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112120005.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112120829.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112120829.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112120838.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112120838.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112121539.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112121539.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Pasted image 20251112121715.png",
+      "path": "Calor y Frío Industrial/Tema 3/Anexo/Pasted image 20251112121715.png"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CFI_calderas1_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 3/CFI_calderas1_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CFI_calderas2_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 3/CFI_calderas2_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CFI_problemas_calderas_2025-2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 3/CFI_problemas_calderas_2025-2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "soluciones_problemas_calderas_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 3/soluciones_problemas_calderas_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Tema 3 Calderas.md",
+      "path": "Calor y Frío Industrial/Tema 3/Tema 3 Calderas.md"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Compresion_Mecanica_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 4/Compresion_Mecanica_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "CyF_problemas_compresion_mecanica_2025_2026.pdf",
+      "path": "Calor y Frío Industrial/Tema 4/CyF_problemas_compresion_mecanica_2025_2026.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Diagramas_ph_refrigerantes_v2.pdf",
+      "path": "Calor y Frío Industrial/Tema 4/Diagramas_ph_refrigerantes_v2.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "P3_e.pdf",
+      "path": "Calor y Frío Industrial/Tema 4/P3_e.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "P5_e_r.pdf",
+      "path": "Calor y Frío Industrial/Tema 4/P5_e_r.pdf"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "Solucion Compresion Mecanica P4.pptx",
+      "path": "Calor y Frío Industrial/Tema 4/Solucion Compresion Mecanica P4.pptx"
+    },
+    {
+      "subject": "calor-frio",
+      "name": "~$Solucion Compresion Mecanica P4.pptx",
+      "path": "Calor y Frío Industrial/Tema 4/~$Solucion Compresion Mecanica P4.pptx"
+    },
+    {
+      "subject": "estructuras",
+      "name": "01 - Cap.0.IE.Conceptosfundamentalesprevios.pdf",
+      "path": "Ingeniería Estructural/01 - Cap.0.IE.Conceptosfundamentalesprevios.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "02 - EJERCICIO 1_ EO.pdf",
+      "path": "Ingeniería Estructural/02 - EJERCICIO 1_ EO.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "03 - EJERCICIO 3 - Ordinaria 25-26 - Solucion.pdf",
+      "path": "Ingeniería Estructural/03 - EJERCICIO 3 - Ordinaria 25-26 - Solucion.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "04 - EJERCICIO 3 - Ordinaria 25-26.pdf",
+      "path": "Ingeniería Estructural/04 - EJERCICIO 3 - Ordinaria 25-26.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "05 - Guía examen.md",
+      "path": "Ingeniería Estructural/05 - Guía examen.md"
+    },
+    {
+      "subject": "estructuras",
+      "name": "06 - Matricial.md",
+      "path": "Ingeniería Estructural/06 - Matricial.md"
+    },
+    {
+      "subject": "estructuras",
+      "name": "07 - Matricial.pdf",
+      "path": "Ingeniería Estructural/07 - Matricial.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "08 - PDFs-gulag-free (3).zip",
+      "path": "Ingeniería Estructural/08 - PDFs-gulag-free (3).zip"
+    },
+    {
+      "subject": "estructuras",
+      "name": "09 - PRESENTACIÓN_25_26.pdf",
+      "path": "Ingeniería Estructural/09 - PRESENTACIÓN_25_26.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "10 - Reticuladas ejercicio 2.pdf",
+      "path": "Ingeniería Estructural/10 - Reticuladas ejercicio 2.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "11 - Solucion Ej 1_enero 26.pdf",
+      "path": "Ingeniería Estructural/11 - Solucion Ej 1_enero 26.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "12 - Soluciones Problemas IE Capítulo 1.pdf",
+      "path": "Ingeniería Estructural/12 - Soluciones Problemas IE Capítulo 1.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "13 - wuolah-free-APUNTES Y EJERCICIOS TOP ESTRUCTURAS-gulag-free.pdf",
+      "path": "Ingeniería Estructural/13 - wuolah-free-APUNTES Y EJERCICIOS TOP ESTRUCTURAS-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "14 - wuolah-free-Ejercicio-examen-parcial-explicado-barras-con-incremento-temperatura-gulag-free.pdf",
+      "path": "Ingeniería Estructural/14 - wuolah-free-Ejercicio-examen-parcial-explicado-barras-con-incremento-temperatura-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "15 - wuolah-free-Ejercicios-examen-parcial-cables-resuelto-y-explicado-gulag-free.pdf",
+      "path": "Ingeniería Estructural/15 - wuolah-free-Ejercicios-examen-parcial-cables-resuelto-y-explicado-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "16 - wuolah-free-Examen-2018-Ingenieria-Industrial-con-explicacion-gulag-free.pdf",
+      "path": "Ingeniería Estructural/16 - wuolah-free-Examen-2018-Ingenieria-Industrial-con-explicacion-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "17 - wuolah-free-Examen-ORD-Ene-2024-reticuladas-gulag-free.pdf",
+      "path": "Ingeniería Estructural/17 - wuolah-free-Examen-ORD-Ene-2024-reticuladas-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "18 - wuolah-free-Examen-Parcial-2024-RESUELTO-gulag-free.pdf",
+      "path": "Ingeniería Estructural/18 - wuolah-free-Examen-Parcial-2024-RESUELTO-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "19 - wuolah-free-Examen-parcial-ejercicio-rotula-resuelto-y-explicado-gulag-free.pdf",
+      "path": "Ingeniería Estructural/19 - wuolah-free-Examen-parcial-ejercicio-rotula-resuelto-y-explicado-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "20 - wuolah-free-PARCIAL-2324-gulag-free.pdf",
+      "path": "Ingeniería Estructural/20 - wuolah-free-PARCIAL-2324-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "21 - wuolah-free-Problemas-Cap-1-Resueltos-2024-gulag-free.pdf",
+      "path": "Ingeniería Estructural/21 - wuolah-free-Problemas-Cap-1-Resueltos-2024-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "22 - wuolah-free-SOLUCIONPARCIAL2023-2024-gulag-free.pdf",
+      "path": "Ingeniería Estructural/22 - wuolah-free-SOLUCIONPARCIAL2023-2024-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "23 - wuolah-free-T1movimientosejsRESUELTOS-gulag-free.pdf",
+      "path": "Ingeniería Estructural/23 - wuolah-free-T1movimientosejsRESUELTOS-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111161704.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111161704.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111161824.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111161824.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162021.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162021.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162509.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162509.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162541.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162541.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162617.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162617.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162627.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162627.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162639.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162639.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162718.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162718.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111162728.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111162728.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111163606.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111163606.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111163704.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111163704.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111163904.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111163904.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111163934.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111163934.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111164407.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111164407.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111164422.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111164422.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111164557.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111164557.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111170056.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111170056.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111170117.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111170117.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111170328.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111170328.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111170530.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111170530.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111180536.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111180536.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111180550.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111180550.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111180609.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111180609.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111182625.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111182625.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111182654.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111182654.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260111185533.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260111185533.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260113181847.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260113181847.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260115164516.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260115164516.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Pasted image 20260115180817.png",
+      "path": "Ingeniería Estructural/Anexo/Pasted image 20260115180817.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Apuntes Arcos.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/Apuntes Arcos.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Apuntes Articuladas.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/Apuntes Articuladas.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Apuntes Cálculo Matricial.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/Apuntes Cálculo Matricial.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Apuntes Reticuladas.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/Apuntes Reticuladas.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "formularioIE.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/formularioIE.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Más Problemas.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/Más Problemas.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PROBLEMAS RESUELTOS.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/PROBLEMAS RESUELTOS.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-APUNTES Y EJERCICIOS TOP ESTRUCTURAS-gulag-free.pdf",
+      "path": "Ingeniería Estructural/APUNTES JORGE/wuolah-free-APUNTES Y EJERCICIOS TOP ESTRUCTURAS-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PRESENTACIÓN_IE_26_27.pdf",
+      "path": "Ingeniería Estructural/PRESENTACIÓN_IE_26_27.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "abaqus_acis.log",
+      "path": "Ingeniería Estructural/Práctica 1/abaqus_acis.log"
+    },
+    {
+      "subject": "estructuras",
+      "name": "barragruesapipe.png",
+      "path": "Ingeniería Estructural/Práctica 1/barragruesapipe.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "FULLSFINAL.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/FULLSFINAL.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "FULLUFINAL.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/FULLUFINAL.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "HORMIGON.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/HORMIGON.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_1.cae",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/IEM_3_1_1.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_1.inp",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/IEM_3_1_1.inp"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_1.txt",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/IEM_3_1_1.txt"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_1maxq.cae",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/IEM_3_1_1maxq.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "MASAFINAL.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/MASAFINAL.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "seccionbarrasabajo.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/seccionbarrasabajo.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "SETBARRASABAJO.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/SETBARRASABAJO.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "SETBARRASGRUESAS.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/SETBARRASGRUESAS.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "SV4.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/SV4.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "SvigaMAX.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/SvigaMAX.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "UV4.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/UV4.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "uviga.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/uviga.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "uvigaMAX.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/uvigaMAX.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VIGASFINAL.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/VIGASFINAL.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VIGAUFINAL.png",
+      "path": "Ingeniería Estructural/Práctica 1/finalfinal/VIGAUFINAL.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "GUIA PARA HACER EL PUENTE DE EJEMPLO.pdf",
+      "path": "Ingeniería Estructural/Práctica 1/GUIA PARA HACER EL PUENTE DE EJEMPLO.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Guion 25-26.pdf",
+      "path": "Ingeniería Estructural/Práctica 1/Guion 25-26.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_arco.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_arco.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_OPTIMA.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_OPTIMA.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_OPTIMA2.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_OPTIMA2.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_OPTIMA3.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_OPTIMA3.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_OPTIMA4.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_OPTIMA4.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_OPTIMA5.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_OPTIMA5.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_OPTIMA5MAXCARGA.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_OPTIMA5MAXCARGA.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V1-SOLOVIGA.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V1-SOLOVIGA.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V1.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V1.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V10.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V10.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V2.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V2.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V3.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V3.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V4.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V4.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V5.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V5.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V6.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V6.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V7.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V7.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V8.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V8.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_V9.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_V9.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_VARCOARRIBA.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_VARCOARRIBA.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_VCONTINUO.cae",
+      "path": "Ingeniería Estructural/Práctica 1/IEM_3_1_VCONTINUO.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "pilar.png",
+      "path": "Ingeniería Estructural/Práctica 1/pilar.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "barragruesapipe.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/barragruesapipe.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "BARRASGRUESASPIPE.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/BARRASGRUESASPIPE.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "ESTRUCTURARENDER.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/ESTRUCTURARENDER.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "ESTRUCTURARENDER2.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/ESTRUCTURARENDER2.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "IEM_3_1_1.cae",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/IEM_3_1_1.cae"
+    },
+    {
+      "subject": "estructuras",
+      "name": "pilar.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/pilar.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PILARRENDER.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/PILARRENDER.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VERSIONFINALOPMASA.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VERSIONFINALOPMASA.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VERSIONFINALOPMAXCARGA.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VERSIONFINALOPMAXCARGA.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VERSIONFINALOPS.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VERSIONFINALOPS.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VERSIONFINALOPU.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VERSIONFINALOPU.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VERSIONFINALOPVIGAS.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VERSIONFINALOPVIGAS.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VERSIONFINALOPVIGAU.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VERSIONFINALOPVIGAU.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "vigaprincipal.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/vigaprincipal.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "VIGARENDER.png",
+      "path": "Ingeniería Estructural/Práctica 1/practicafinal/VIGARENDER.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Presentación-2025-2026.ppt",
+      "path": "Ingeniería Estructural/Práctica 1/Presentación-2025-2026.ppt"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.com",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.com"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.dat",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.dat"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.inp",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.inp"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.ipm",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.ipm"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.log",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.log"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.msg",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.msg"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.odb",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.odb"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.prt",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.prt"
+    },
+    {
+      "subject": "estructuras",
+      "name": "PUENTE.sta",
+      "path": "Ingeniería Estructural/Práctica 1/PUENTE.sta"
+    },
+    {
+      "subject": "estructuras",
+      "name": "V1.png",
+      "path": "Ingeniería Estructural/Práctica 1/V1.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "V1_DEFVERTICAL.png",
+      "path": "Ingeniería Estructural/Práctica 1/V1_DEFVERTICAL.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "v4.png",
+      "path": "Ingeniería Estructural/Práctica 1/v4.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "V6.png",
+      "path": "Ingeniería Estructural/Práctica 1/V6.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "V6PIPEBOX02001.png",
+      "path": "Ingeniería Estructural/Práctica 1/V6PIPEBOX02001.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "vigaprincipal.png",
+      "path": "Ingeniería Estructural/Práctica 1/vigaprincipal.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "~$Presentación-2025-2026.ppt",
+      "path": "Ingeniería Estructural/Práctica 1/~$Presentación-2025-2026.ppt"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.0.IE.Conceptosfundamentalesprevios.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Cap.0.IE.Conceptosfundamentalesprevios.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.1.tema1 IE CÁLCULO_MOVIMIENTOS.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Cap.1.tema1 IE CÁLCULO_MOVIMIENTOS.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.1.tema2. IE. Procedimientos de análisis.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Cap.1.tema2. IE. Procedimientos de análisis.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.1.tema3. IE. Teoremas energéticos.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Cap.1.tema3. IE. Teoremas energéticos.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.2.IE.articuladas.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Cap.2.IE.articuladas.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados cap I -22-23_ resultados.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Enunciados cap I -22-23_ resultados.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados_prob_IE_master_2022_2023_Cap I (1).pdf",
+      "path": "Ingeniería Estructural/Tema 1/Enunciados_prob_IE_master_2022_2023_Cap I (1).pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados_prob_IE_master_2022_2023_Cap I.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Enunciados_prob_IE_master_2022_2023_Cap I.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Problemas_RM.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Problemas_RM.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Prob_aula_IE_master_25_26_Cap I.pdf",
+      "path": "Ingeniería Estructural/Tema 1/Prob_aula_IE_master_25_26_Cap I.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "test.m",
+      "path": "Ingeniería Estructural/Tema 1/test.m"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.2.IE.articuladas.pdf",
+      "path": "Ingeniería Estructural/Tema 2/Cap.2.IE.articuladas.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "ejercicios resueltos tema 2 justo.pdf",
+      "path": "Ingeniería Estructural/Tema 2/ejercicios resueltos tema 2 justo.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados_prob_IE_master_20_21_Cap II-resultados.pdf",
+      "path": "Ingeniería Estructural/Tema 2/Enunciados_prob_IE_master_20_21_Cap II-resultados.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados_prob_IE_master_22_23_Cap II.pdf",
+      "path": "Ingeniería Estructural/Tema 2/Enunciados_prob_IE_master_22_23_Cap II.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Formulario Articuladas.md",
+      "path": "Ingeniería Estructural/Tema 2/Formulario Articuladas.md"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Formulario Articuladas.png",
+      "path": "Ingeniería Estructural/Tema 2/Formulario Articuladas.png"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Prob_aula_IE_master_25_26_Cap II.pdf",
+      "path": "Ingeniería Estructural/Tema 2/Prob_aula_IE_master_25_26_Cap II.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Ejercicio-Examen-Estructuras-Articuladas-Simetricas-Resuelto-y-Explicado.pdf",
+      "path": "Ingeniería Estructural/Tema 2/wuolah-free-Ejercicio-Examen-Estructuras-Articuladas-Simetricas-Resuelto-y-Explicado.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Problemas-Articuladas (1).pdf",
+      "path": "Ingeniería Estructural/Tema 2/wuolah-free-Problemas-Articuladas (1).pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.3. IE. Reticuladas_mod 1.pdf",
+      "path": "Ingeniería Estructural/Tema 3/Cap.3. IE. Reticuladas_mod 1.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados_prob_IE_master_2022_2023_Cap III.pdf",
+      "path": "Ingeniería Estructural/Tema 3/Enunciados_prob_IE_master_2022_2023_Cap III.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Prob_aula_IE_master_25_26_Cap III.pdf",
+      "path": "Ingeniería Estructural/Tema 3/Prob_aula_IE_master_25_26_Cap III.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Cap.4. IE. Maticial_v03.pdf",
+      "path": "Ingeniería Estructural/Tema 4/Cap.4. IE. Maticial_v03.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Enunciados_prob_IE_master_22_23_Cap IV.pdf",
+      "path": "Ingeniería Estructural/Tema 4/Enunciados_prob_IE_master_22_23_Cap IV.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "Prob_aula_IE_master_24_25_Cap IV.pdf",
+      "path": "Ingeniería Estructural/Tema 4/Prob_aula_IE_master_24_25_Cap IV.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Articuladas.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Articuladas.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-EJERCICIO-1.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-EJERCICIO-1.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-EJERCICIO-2.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-EJERCICIO-2.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-EJERCICIO-3.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-EJERCICIO-3.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Ejercicio-Examen-Articuladas-Estructuras-Simetricas-y-Antimetricas-Resuelto-y-Explicado.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Ejercicio-Examen-Articuladas-Estructuras-Simetricas-y-Antimetricas-Resuelto-y-Explicado.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Ejercicio-Examen-Estructuras-Articuladas-Simetricas-Resuelto-y-Explicado (1).pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Ejercicio-Examen-Estructuras-Articuladas-Simetricas-Resuelto-y-Explicado (1).pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Ejercicio-Examen-Estructuras-Articuladas-Simetricas-Resuelto-y-Explicado.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Ejercicio-Examen-Estructuras-Articuladas-Simetricas-Resuelto-y-Explicado.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Examen-2025.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Examen-2025.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-examen-enero-IE-Ej-1sin-puntuacion.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-examen-enero-IE-Ej-1sin-puntuacion.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Examen-Extraordinario2025Matriciales.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Examen-Extraordinario2025Matriciales.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Examen-Junio-2020-Resuelto-y-Explicado.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Examen-Junio-2020-Resuelto-y-Explicado.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Examen-Matricial-2020-con-explicacion.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Examen-Matricial-2020-con-explicacion.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Extraordinaria-MATRICIAL-20232024.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Extraordinaria-MATRICIAL-20232024.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-FORMULARIO-MATRICIAL-RETICULADAS.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-FORMULARIO-MATRICIAL-RETICULADAS.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-ORDINARIA-22-23-SOLUCION.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-ORDINARIA-22-23-SOLUCION.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Solucion-Ejercicio-1.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Solucion-Ejercicio-1.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Solucion-Ejercicio-2.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Solucion-Ejercicio-2.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Solucion-Ejercicio-3.pdf",
+      "path": "Ingeniería Estructural/wouolah 2/wuolah-free-Solucion-Ejercicio-3.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-Apuntes-Reticuladas-gulag-free.pdf",
+      "path": "Ingeniería Estructural/Wuolah 3/wuolah-free-Apuntes-Reticuladas-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-LO-MEJOR-Capitulo-III251203112108-gulag-free.pdf",
+      "path": "Ingeniería Estructural/Wuolah 3/wuolah-free-LO-MEJOR-Capitulo-III251203112108-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-LO-MEJOR-Capitulo-IV260116094328-gulag-free.pdf",
+      "path": "Ingeniería Estructural/Wuolah 3/wuolah-free-LO-MEJOR-Capitulo-IV260116094328-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-LO-MEJOR-Capitulos-0-y-I251017110834-gulag-free.pdf",
+      "path": "Ingeniería Estructural/Wuolah 3/wuolah-free-LO-MEJOR-Capitulos-0-y-I251017110834-gulag-free.pdf"
+    },
+    {
+      "subject": "estructuras",
+      "name": "wuolah-free-PROBLEMAS-RETICULADAS-gulag-free.pdf",
+      "path": "Ingeniería Estructural/Wuolah 3/wuolah-free-PROBLEMAS-RETICULADAS-gulag-free.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "01 - Presentacion_FdE.pdf",
+      "path": "Fuentes de Energía/01 - Presentacion_FdE.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "02 - Introducción_2026.pptx",
+      "path": "Fuentes de Energía/02 - Introducción_2026.pptx"
+    },
+    {
+      "subject": "fuentes",
+      "name": "03 - 12.0 - UC3M.pdf",
+      "path": "Fuentes de Energía/03 - 12.0 - UC3M.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "04 - aEnergia solar Intro.pdf",
+      "path": "Fuentes de Energía/04 - aEnergia solar Intro.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "05 - bEnergia solar Bja temperatura.pdf",
+      "path": "Fuentes de Energía/05 - bEnergia solar Bja temperatura.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "06 - cEnergia solar Alta temperatura_v2.pdf",
+      "path": "Fuentes de Energía/06 - cEnergia solar Alta temperatura_v2.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "07 - dEnergia solar fotovoltaica.pdf",
+      "path": "Fuentes de Energía/07 - dEnergia solar fotovoltaica.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "08 - CombFosiles_FdE_2526.pdf",
+      "path": "Fuentes de Energía/08 - CombFosiles_FdE_2526.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "09 - CS-Datasheet-HiKu6_CS6W-MS_v2-4_EN-30mm-frame.pdf",
+      "path": "Fuentes de Energía/09 - CS-Datasheet-HiKu6_CS6W-MS_v2-4_EN-30mm-frame.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "10 - Datos climáticos Leganés.epw.txt",
+      "path": "Fuentes de Energía/10 - Datos climáticos Leganés.epw.txt"
+    },
+    {
+      "subject": "fuentes",
+      "name": "11 - Ejercicio evaluable 1.pdf",
+      "path": "Fuentes de Energía/11 - Ejercicio evaluable 1.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "12 - Ejercicio evaluable 2_Hoja de respuestas.pdf",
+      "path": "Fuentes de Energía/12 - Ejercicio evaluable 2_Hoja de respuestas.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "13 - Ejercicio evaluable 2_SAM_PV.pdf",
+      "path": "Fuentes de Energía/13 - Ejercicio evaluable 2_SAM_PV.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "14 - ejercios resueltos.rar",
+      "path": "Fuentes de Energía/14 - ejercios resueltos.rar"
+    },
+    {
+      "subject": "fuentes",
+      "name": "15 - Entregable Ejercicio evaluable 1.pdf",
+      "path": "Fuentes de Energía/15 - Entregable Ejercicio evaluable 1.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "16 - FdE_Biomasa_2526.pdf",
+      "path": "Fuentes de Energía/16 - FdE_Biomasa_2526.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "17 - FdE_Eólica_2526.pdf",
+      "path": "Fuentes de Energía/17 - FdE_Eólica_2526.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "18 - FdE_Geotérmica_2526.pdf",
+      "path": "Fuentes de Energía/18 - FdE_Geotérmica_2526.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "19 - FdE_Hidraúlica_AG_2526.pdf",
+      "path": "Fuentes de Energía/19 - FdE_Hidraúlica_AG_2526.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "20 - Hidrogeno.pdf",
+      "path": "Fuentes de Energía/20 - Hidrogeno.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "21 - Hoja de cálculo - Temperaturas (1).xlsx",
+      "path": "Fuentes de Energía/21 - Hoja de cálculo - Temperaturas (1).xlsx"
+    },
+    {
+      "subject": "fuentes",
+      "name": "22 - Hoja de cálculo - Temperaturas.xlsx",
+      "path": "Fuentes de Energía/22 - Hoja de cálculo - Temperaturas.xlsx"
+    },
+    {
+      "subject": "fuentes",
+      "name": "23 - Nuclear_2526.pdf",
+      "path": "Fuentes de Energía/23 - Nuclear_2526.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "24 - Problema hidraulica.pdf",
+      "path": "Fuentes de Energía/24 - Problema hidraulica.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "25 - Problemas biomasa.pdf",
+      "path": "Fuentes de Energía/25 - Problemas biomasa.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "26 - Problemas energía solar.pdf",
+      "path": "Fuentes de Energía/26 - Problemas energía solar.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "27 - Problemas eólica.pdf",
+      "path": "Fuentes de Energía/27 - Problemas eólica.pdf"
+    },
+    {
+      "subject": "fuentes",
+      "name": "28 - Statistical Review of World Energy.pdf",
+      "path": "Fuentes de Energía/28 - Statistical Review of World Energy.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "1 introducción SIF (JLC) (04).pdf",
+      "path": "Sistemas Integrados de Fabricación/1 introducción SIF (JLC) (04).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "2 implantación (JLC) (02).pdf",
+      "path": "Sistemas Integrados de Fabricación/2 implantación (JLC) (02).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "3 ingenieria de diseño (JLC) (11).pdf",
+      "path": "Sistemas Integrados de Fabricación/3 ingenieria de diseño (JLC) (11).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "5 CIM. Sistemas de gestión (17).pdf",
+      "path": "Sistemas Integrados de Fabricación/5 CIM. Sistemas de gestión (17).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "6 INDUSTRIA 4.0 (08).pdf",
+      "path": "Sistemas Integrados de Fabricación/6 INDUSTRIA 4.0 (08).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "8 Ingeniería concurrente (06).pdf",
+      "path": "Sistemas Integrados de Fabricación/8 Ingeniería concurrente (06).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Accenture-The-Race-for-Digital-Operations-Transformation-Final (2020).pdf",
+      "path": "Sistemas Integrados de Fabricación/Accenture-The-Race-for-Digital-Operations-Transformation-Final (2020).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Artículo Industria 4.0 (Revista Economía Industrial, 406, 2017, pp 151-164).pdf",
+      "path": "Sistemas Integrados de Fabricación/Artículo Industria 4.0 (Revista Economía Industrial, 406, 2017, pp 151-164).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Artículo interesante (A_MRPII_survey_study_of_the_Chinese_manufacturing).pdf",
+      "path": "Sistemas Integrados de Fabricación/Artículo interesante (A_MRPII_survey_study_of_the_Chinese_manufacturing).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Artículo virtualización, descentralización ... Industria 4.0.pdf",
+      "path": "Sistemas Integrados de Fabricación/Artículo virtualización, descentralización ... Industria 4.0.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Casos prácticos EFs (actualizado 14.12.2021).pdf",
+      "path": "Sistemas Integrados de Fabricación/Casos prácticos EFs (actualizado 14.12.2021).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "CIM still the solution (2008).pdf",
+      "path": "Sistemas Integrados de Fabricación/CIM still the solution (2008).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Informe Capgemini (2017) dti-automotive-smart-factories_report.pdf",
+      "path": "Sistemas Integrados de Fabricación/Informe Capgemini (2017) dti-automotive-smart-factories_report.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Informe PWC (Industria-4.0 en España).pdf",
+      "path": "Sistemas Integrados de Fabricación/Informe PWC (Industria-4.0 en España).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Introducción Casos Prácticos.pdf",
+      "path": "Sistemas Integrados de Fabricación/Introducción Casos Prácticos.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Normativa trabajo casos prácticos SIF.pdf",
+      "path": "Sistemas Integrados de Fabricación/Normativa trabajo casos prácticos SIF.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Presentación SIF (sep2026).pdf",
+      "path": "Sistemas Integrados de Fabricación/Presentación SIF (sep2026).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "pwc-5G-in-manufacturing.pdf",
+      "path": "Sistemas Integrados de Fabricación/pwc-5G-in-manufacturing.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Qué es la Industria 4.0 - (IK4-Tekniker).pdf",
+      "path": "Sistemas Integrados de Fabricación/Qué es la Industria 4.0 - (IK4-Tekniker).pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Referencia_aplicacion_CIM_industria_calzado_UPV-10.pdf",
+      "path": "Sistemas Integrados de Fabricación/Referencia_aplicacion_CIM_industria_calzado_UPV-10.pdf"
+    },
+    {
+      "subject": "fabricacion",
+      "name": "Review 2003 sobre CIM.pdf",
+      "path": "Sistemas Integrados de Fabricación/Review 2003 sobre CIM.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "01 - PRESENTACION_ADEM_26-27.pdf",
+      "path": "ADEM/01 - PRESENTACION_ADEM_26-27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "02 - INTRO SINTESIS_ADEM_26-27.pdf",
+      "path": "ADEM/02 - INTRO SINTESIS_ADEM_26-27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "03 - SINTESIS ESTRUCTURAL_ADEM_26-27.pdf",
+      "path": "ADEM/03 - SINTESIS ESTRUCTURAL_ADEM_26-27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "03_SINTESIS GRAFICA_26-27.pdf",
+      "path": "ADEM/03_SINTESIS GRAFICA_26-27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "04_MECANISMOS COGNADOS_26-27.pdf",
+      "path": "ADEM/04_MECANISMOS COGNADOS_26-27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "05_SINTESIS EMPIRICA_ADEM_26-27.pdf",
+      "path": "ADEM/05_SINTESIS EMPIRICA_ADEM_26-27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "06_SINTESIS ANALITICA DE CUADRILATEROS ARTICULADOS_2025.pdf",
+      "path": "ADEM/06_SINTESIS ANALITICA DE CUADRILATEROS ARTICULADOS_2025.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "Cronograma_26_27.pdf",
+      "path": "ADEM/Cronograma_26_27.pdf"
+    },
+    {
+      "subject": "adye",
+      "name": "P-1_ADEM.pdf",
+      "path": "ADEM/P-1_ADEM.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "01 - ANEXO sobre utilización de variables binarias en formulación de modelos de PL.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/01 - ANEXO sobre utilización de variables binarias en formulación de modelos de PL.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "02 - Caso Ikea.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/02 - Caso Ikea.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "03 - Caso_Inditex_hasta 2001.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/03 - Caso_Inditex_hasta 2001.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "04 - Cuestiones introduccion_enunciados.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/04 - Cuestiones introduccion_enunciados.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "05 - D-Introduccion.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/05 - D-Introduccion.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "06 - Ejemplo composicion optima de un pienso con solucion.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/06 - Ejemplo composicion optima de un pienso con solucion.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "07 - Ejercicios Formulacion PL.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/07 - Ejercicios Formulacion PL.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "08 - Resumen PL.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/08 - Resumen PL.pdf"
+    },
+    {
+      "subject": "dspl",
+      "name": "DSPL Presentación2627.pdf",
+      "path": "Diseño de Sistemas Productivos y Logísticos/DSPL Presentación2627.pdf"
+    }
+  ],
   "dataset": {
     "version": 1,
     "updated": "2026-10-01T16:24:19.255Z",
