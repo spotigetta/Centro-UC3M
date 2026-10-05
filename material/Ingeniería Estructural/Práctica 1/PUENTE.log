@@ -1,0 +1,19 @@
+Analysis initiated from SIMULIA established products
+Abaqus JOB PUENTE
+Abaqus Learning Edition 2022
+Begin Analysis Input File Processor
+11/11/2025 20:19:11
+Run pre.exe
+11/11/2025 20:19:13
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+11/11/2025 20:19:13
+Run standard.exe
+11/11/2025 20:19:14
+End Abaqus/Standard Analysis
+Begin SIM Wrap-up
+11/11/2025 20:19:14
+Run SMASimUtility.exe
+11/11/2025 20:19:14
+End SIM Wrap-up
+Abaqus JOB PUENTE COMPLETED
