@@ -1,24 +1,34 @@
-# Centro UC3M: una sola aplicación y un solo repositorio
+# Centro UC3M
 
-Este directorio es el repositorio de GitHub Pages de `https://spotigetta.github.io/Centro-UC3M/`. La web usa `app.js`, `styles.css` y `data/state.json`. El botón **GitHub → Preparar web y archivos** del panel de Obsidian genera aquí el estado actual a partir de `Centro UC3M/Panel UC3M.md` y copia el material de las asignaturas. La carpeta antigua `Centro UC3M/movil` ya no interviene.
+Esta es la aplicación JavaScript de [Centro UC3M](https://spotigetta.github.io/Centro-UC3M/). GitHub Pages entrega los archivos compilados; el navegador ejecuta `app.js`. El HTML de `src/index.html` es la entrada de la aplicación, no una copia estática de los datos.
 
-## Del ordenador al móvil
+## Código y datos
 
-1. Edita el centro en Obsidian.
-2. Abre **GitHub → Preparar web y archivos** dentro del panel UC3M.
-3. En este directorio haz `git add -A`, `git commit -m "Actualizar Centro UC3M"` y `git push` cuando quieras publicar. El botón no hace commit ni push por ti.
-4. Abre o recarga GitHub Pages. La PWA usa el mismo estado, asignaturas, tareas, grupos, horario, evaluación, prácticas, calendario, proyectos, apuntes, informes y enlaces del centro.
+- `src/` contiene la interfaz, estilos, service worker y lógica académica compartida.
+- `src/shared/academic-core.js` se usa tanto al compilar el plugin de Obsidian como en la web para fechas, recurrencias y formato de horas.
+- `data/state.json` reúne el estado que se genera desde el panel Markdown, las fuentes académicas y el material local.
+- `material/` contiene los archivos publicables de las asignaturas.
+- `scripts/build.cjs` valida el estado y genera `dist/`, que no se guarda en Git.
+- `.github/workflows/pages.yml` compila y publica `dist/` en cada push a `main`.
 
-## Del móvil al ordenador
+## Del ordenador a la web
 
-En la web, **GitHub ⚙** permite introducir un token de acceso a este repositorio con permiso `Contents: read/write`. Se guarda solo en la sesión del navegador. Edita y usa **Sincronizar** para guardar las tarjetas, grupos, horario, proyectos o apuntes. Los archivos subidos y los informes Markdown editados se guardan directamente en `material/` del repositorio y se marcan para la importación.
+En este equipo, el repositorio tiene configurado `core.hooksPath=.githooks`. Al ejecutar `git commit`, el hook regenera `data/state.json` y la copia publicable del material desde Obsidian, comprueba los archivos y los añade al commit. Después, `git push` activa la GitHub Action. No hace falta pulsar «Preparar web» antes de cada commit.
 
-En Obsidian, usa **GitHub → Traer cambios del móvil**. Este paso hace `git pull --ff-only`, aplica únicamente los elementos modificados en la web al Markdown local y copia los archivos nuevos o editados. Si ya existía un archivo distinto, guarda una copia en `.obsidian/uc3m-backups`. Después pulsa **Preparar web y archivos** y haz tu commit y push para cerrar el ciclo. La importación requiere que no haya cambios Git sin commit en este directorio; los cambios del panel Markdown se conservan y se combinan por elemento.
+La primera vez que se publique con este flujo, configura **Settings → Pages → Build and deployment → Source: GitHub Actions** en el repositorio. La Action no hace commit ni modifica `main`: publica su compilación como artefacto de Pages. Un `git fetch` solo descarga cambios; la publicación se inicia con un push.
 
-El estado web incluye datos personales como los integrantes de grupos y se publica en GitHub Pages. Los dos PDF de más de 100 MB permanecen en Obsidian y aparecen como «solo en Obsidian», porque GitHub no acepta ese tamaño como archivo normal. El resto de los materiales ocupa cerca de 914 MiB: antes de añadir mucho material nuevo, comprueba el límite de 1 GB de GitHub Pages. Los archivos de material se descargan bajo demanda y el service worker no los almacena completos en el móvil.
+En otro ordenador hay que activar el hook una vez con `git config --local core.hooksPath .githooks` y tener la bóveda en la misma estructura de carpetas. También se puede ejecutar manualmente `node scripts/build.cjs --check` y `node scripts/build.cjs` para comprobar o compilar la web. `npm.cmd run check` funciona en PowerShell si `npm.ps1` está bloqueado.
 
-## Asistente académico UC3M
+La web y Obsidian leen los mismos datos académicos y comparten el núcleo de fechas. Obsidian conserva su integración nativa con el editor de Markdown, el sistema de archivos y los diálogos; la web usa el navegador y GitHub para esas operaciones. Los elementos que todavía dependan de esas APIs de Obsidian deben implementarse explícitamente en la interfaz web para que su interacción sea idéntica.
 
-La pestaña **Asistente IA** usa las siete fuentes académicas completas, el horario, el calendario y el estado actual del panel. Los apuntes, informes, JSON, CSV, TXT o TEX solo se incluyen cuando se añaden expresamente como contexto; los PDF no se envían automáticamente.
+## Del móvil a Obsidian
 
-Gemini devuelve respuestas estructuradas con citas. Si se le pide modificar información, solo puede proponer tareas, eventos, progreso de prácticas o notas en la capa editable. La aplicación valida cada operación y muestra una vista previa antes de ejecutarla. Las fuentes aprobadas, ponderaciones y cronogramas originales son de solo lectura. En Obsidian la clave se guarda en los datos privados locales del plugin; en la web se conserva únicamente durante la sesión del navegador y nunca se escribe en GitHub.
+En la web, **GitHub ⚙** permite introducir un token con permiso `Contents: read/write`. Se conserva solo en la sesión del navegador. **Sincronizar** guarda tareas, grupos, proyectos y otros datos editables en `data/state.json`; la carga de material e informes Markdown también escribe en el repositorio.
+
+En Obsidian, usa **GitHub → Traer cambios del móvil** antes de volver a editar los mismos elementos localmente. Se ejecuta `git pull --ff-only`, se importan los elementos modificados y se conserva una copia de seguridad de los archivos que difieran. El siguiente commit local genera de nuevo el estado web combinado.
+
+Los dos PDF de más de 100 MB permanecen solo en Obsidian. El material publicado ocupa aproximadamente 914 MiB; el compilador comprueba el tamaño antes de publicar. Los archivos se descargan cuando se abren y el service worker solo guarda la interfaz.
+
+## Asistente académico
+
+La pestaña **Asistente IA** usa las fuentes académicas, horario, calendario y estado del panel. Solo adjunta apuntes, informes, JSON, CSV, TXT o TEX cuando se seleccionan expresamente; los PDF no se envían de forma automática. Los cambios propuestos se validan y se muestran antes de aplicarlos a la capa editable. La clave de Gemini se conserva solo durante la sesión web y no entra en Git.
