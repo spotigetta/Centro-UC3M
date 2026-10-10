@@ -254,7 +254,7 @@ function uploadDialog(s){modal('Subir material · '+s.name,body=>{body.append(no
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;query='';$('#search').value='';render()});$('#sync').onclick=sync;$('#settings').onclick=settings;$('#notifications').onclick=notificationCenter;$('#search').oninput=e=>{query=e.target.value.trim();render()};$('#subject-filter').onchange=e=>{filter=e.target.value;render()};
 (async()=>{
   try{
-    const snapshot=await fetch('data/state.json?v=a41f57856126',{cache:'no-store'});
+    const snapshot=await fetch('data/state.json?v=303bbf894437',{cache:'no-store'});
     if(!snapshot.ok)throw Error('Falta la copia inicial de datos');
     const initial=await snapshot.json(),local=localStorage.getItem('uc3m-state-v3');
     baseline=structuredClone(initial);
@@ -274,7 +274,7 @@ document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.datase
     if('serviceWorker'in navigator&&location.protocol==='https:'){
       let refreshing=false;
       navigator.serviceWorker.addEventListener('controllerchange',()=>{if(refreshing)return;refreshing=true;location.reload()});
-      const registration=await navigator.serviceWorker.register('sw.js?v=a41f57856126',{updateViaCache:'none'});
+      const registration=await navigator.serviceWorker.register('sw.js?v=303bbf894437',{updateViaCache:'none'});
       registration.update().catch(()=>{});
     }
   }catch(error){status('No se pudo cargar: '+error.message)}
