@@ -11,7 +11,7 @@ function renderUC3MOverview(root,model){
   const pending=panel('Pendientes',cards.length),list=el('div','overview-list uc3m-overview-list');
   for(const card of cards.slice(0,4)){
     const row=el('label'),check=el('input');check.type='checkbox';check.onchange=()=>model.onToggle(card);
-    row.append(check,el('span','',card.title));if(card.meta?.due)row.append(el('small','',card.meta.due));list.append(row);
+    row.append(check,el('span','',global.UC3MMarkdown?.plain(card.title)||card.title));if(card.meta?.due)row.append(el('small','',card.meta.due));list.append(row);
   }
   if(!cards.length)list.append(el('p','overview-empty uc3m-overview-empty','Todo al día'));
   pending.append(list);
