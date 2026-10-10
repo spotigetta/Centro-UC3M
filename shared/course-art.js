@@ -1,0 +1,17 @@
+'use strict';
+(function(global){
+const motifs={
+  'calor-frio':'<path d="M58 22c9 17-10 21-3 34 8-3 11-12 11-18 19 19 20 42 0 54-21 13-44-1-44-23 0-17 13-25 16-37 5 11 2 20-1 28 16-8 8-24 21-38Z" fill="url(#gold)"/><path d="M59 58c8 11-5 16 0 23 7 0 10-6 10-11 11 17-2 26-13 23-12-4-13-18 3-35Z" fill="#fff" opacity=".9"/><path d="M85 28v25m-12-12h24m-21-9 18 18m0-18L76 50" stroke="#b8eeff" stroke-width="2" stroke-linecap="round"/>',
+  'estructuras':'<path d="M16 84h88M23 75c18-32 56-32 74 0M23 75h74M23 75V50m74 25V50M37 75V59m17 16V49m17 26V49m17 26V59" fill="none" stroke="url(#gold)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M19 84v10m82-10v10M13 94h94" stroke="#eaf5ff" stroke-width="3" stroke-linecap="round"/>',
+  'fuentes':'<circle cx="60" cy="60" r="17" fill="url(#gold)"/><circle cx="60" cy="60" r="29" fill="none" stroke="#b8eeff" stroke-width="2" stroke-dasharray="3 6"/><path d="M60 13v19m0 56v19M13 60h19m56 0h19M27 27l14 14m38 38 14 14m0-66L79 41M41 79 27 93" stroke="url(#gold)" stroke-width="5" stroke-linecap="round"/><path d="M54 69 67 47l-3 13h8L54 79l3-10Z" fill="#fff"/>',
+  'fabricacion':'<path d="M58 20v12m0 52v12M20 58h12m52 0h12M31 31l9 9m36 36 9 9m0-54-9 9M40 76l-9 9" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/><circle cx="58" cy="58" r="25" fill="none" stroke="#eaf5ff" stroke-width="7"/><circle cx="58" cy="58" r="10" fill="url(#gold)"/><path d="M78 18h23v23M90 18v12h11" fill="none" stroke="#b8eeff" stroke-width="2"/>',
+  'adye':'<path d="M20 83 43 34 91 43 75 84 20 83Z" fill="none" stroke="url(#gold)" stroke-width="5" stroke-linejoin="round"/><path d="M43 34 75 84M20 83l71-40" stroke="#b8eeff" stroke-width="2"/><circle cx="20" cy="83" r="7" fill="#fff"/><circle cx="43" cy="34" r="7" fill="#fff"/><circle cx="91" cy="43" r="7" fill="#fff"/><circle cx="75" cy="84" r="7" fill="#fff"/><circle cx="58" cy="59" r="5" fill="url(#gold)"/>',
+  'dspl':'<path d="M19 77c17-26 31 10 49-15 12-16 16-26 33-24" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/><circle cx="19" cy="77" r="9" fill="#fff"/><circle cx="68" cy="62" r="9" fill="#fff"/><circle cx="101" cy="38" r="9" fill="#fff"/><path d="M22 32h25v17H22zM76 77h26v18H76z" fill="none" stroke="#b8eeff" stroke-width="3"/><path d="M28 25v7m13-7v7m42 45v-7m12 7v-7" stroke="#b8eeff" stroke-width="2"/>'
+};
+function courseArt(id){
+  const safe=Object.hasOwn(motifs,id)?id:'dspl',motif=motifs[safe],stars=[[15,17],[90,14],[105,64],[17,104],[47,12],[112,96],[29,56],[82,104]].map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i%3===0?1.7:1}" fill="#fff" opacity=".7"/>`).join('');
+  return `<svg viewBox="0 0 120 120" aria-hidden="true" focusable="false"><defs><radialGradient id="sky-${safe}" cx="25%" cy="20%" r="90%"><stop stop-color="#4762bc"/><stop offset=".52" stop-color="#172f7c"/><stop offset="1" stop-color="#091441"/></radialGradient><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0ae"/><stop offset=".48" stop-color="#f1bd00"/><stop offset="1" stop-color="#d78141"/></linearGradient></defs><circle cx="60" cy="60" r="58" fill="url(#sky-${safe})"/><circle cx="60" cy="60" r="49" fill="none" stroke="#ffffff45"/><circle cx="60" cy="60" r="38" fill="none" stroke="#ffffff2a" stroke-dasharray="2 8"/>${stars}<g filter="drop-shadow(0 3px 4px #0008)">${motif}</g></svg>`;
+}
+if(typeof module!=='undefined'&&module.exports)module.exports=courseArt;
+if(global)global.UC3MCourseArt=courseArt;
+})(typeof window!=='undefined'?window:null);
