@@ -7,7 +7,10 @@ const dist=path.join(repo,'dist');
 const worktree=path.join(repo,'.pages-worktree');
 const branch='gh-pages';
 const push=process.argv.includes('--push');
-const git=(args,cwd=repo,options={})=>execFileSync('git',args,{cwd,encoding:'utf8',stdio:options.capture?'pipe':'inherit'}).trim();
+const git=(args,cwd=repo,options={})=>{
+  const output=execFileSync('git',args,{cwd,encoding:'utf8',stdio:options.capture?'pipe':'inherit'});
+  return typeof output==='string'?output.trim():'';
+};
 const exists=args=>{try{git(args,repo,{capture:true});return true}catch{return false}};
 if(path.relative(repo,worktree)!=='.pages-worktree')throw Error('Directorio de publicación fuera del repositorio');
 git(['rev-parse','--show-toplevel'],repo,{capture:true});

@@ -5,6 +5,8 @@ tags: [uc3m/estudio]
 ---
 r
 ## Entrada
+- [ ] lululullul <!-- tello:{"id":"1bc88ba6-dd2f-4c1b-893a-ccf1e70715a5","area":"Ingeniería Estructural","areas":["Ingeniería Estructural"],"due":""} -->
+- [x] Estudiar <!-- tello:{"id":"05b0a02f-b2de-495a-a197-59512122d281","area":"Ingeniería Estructural","areas":["Ingeniería Estructural"],"due":""} -->
 - [ ] PRÁCTICA 1 <br> - MATLAB <br> - HOJA A MANO <!-- tello:{"id":"ae7e9b22-69f1-4a94-9146-1cea6e31a7c7","area":"Ampliación de Diseño y Ensayo de Máquinas","priority":"Media","pdca":"","areas":["Ampliación de Diseño y Ensayo de Máquinas"],"due":"2026-10-13","start":"","time":"","repeat":"","weekdays":[],"monthday":1,"until":"","project":"","links":""} -->
 - [x] Preparar parcial 4 oct <!-- tello:{"id":"d328f2e6-edad-44f2-908d-7816e42c5b9c","area":"Calor y Frío Industrial","priority":"Media","pdca":"","areas":["Calor y Frío Industrial"],"due":"2026-10-04","start":"","time":"","repeat":"","weekdays":[],"monthday":1,"until":"","project":"","links":""} -->
 

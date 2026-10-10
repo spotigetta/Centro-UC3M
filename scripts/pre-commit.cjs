@@ -11,4 +11,4 @@ if(!fs.existsSync(source)){
 }
 execFileSync(process.execPath,[source],{cwd:vault,stdio:'inherit'});
 execFileSync(process.execPath,[path.join(repo,'scripts','build.cjs'),'--check'],{cwd:repo,stdio:'inherit'});
-execFileSync('git',['add','-A','--','data/state.json','Panel UC3M.md','material','index.html','app.js','styles.css','sw.js','shared'],{cwd:repo,stdio:'inherit'});
+execFileSync('git',['add','-A','--','data/state.json','Panel UC3M.md','material'],{cwd:repo,stdio:'inherit'});

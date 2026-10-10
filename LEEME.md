@@ -15,19 +15,19 @@ Esta es la aplicación JavaScript de [Centro UC3M](https://spotigetta.github.io/
 
 En este equipo, el repositorio tiene configurado `core.hooksPath=.githooks`. Al ejecutar `git commit` en `main`, el hook regenera `data/state.json` y la copia publicable del material desde Obsidian, comprueba los archivos y los añade al commit. No hace falta pulsar «Preparar web» antes de cada commit.
 
-Para publicar ejecuta `npm.cmd run deploy:push`. El comando construye `dist/`, actualiza la rama separada `gh-pages` mediante el worktree local `.pages-worktree` y la sube a GitHub. `main` mantiene el código fuente; `gh-pages` contiene únicamente la aplicación compilada.
+Para publicar cambios de interfaz ejecuta `npm.cmd run deploy` y sube la rama `gh-pages` con GitHub Desktop, o ejecuta `npm.cmd run deploy:push`. El comando construye `dist/` y actualiza el worktree local `.pages-worktree`. `main` mantiene el código fuente y los datos; `gh-pages` contiene la aplicación compilada.
 
 En GitHub configura **Settings → Pages → Build and deployment → Source: Deploy from a branch**, selecciona la rama **gh-pages** y la carpeta **/(root)**. No se usa GitHub Actions. Un `git fetch` solo descarga cambios; no publica la web.
 
 En otro ordenador hay que activar el hook una vez con `git config --local core.hooksPath .githooks` y tener la bóveda en la misma estructura de carpetas. También se puede ejecutar manualmente `node scripts/build.cjs --check` y `node scripts/build.cjs` para comprobar o compilar la web. `npm.cmd run check` funciona en PowerShell si `npm.ps1` está bloqueado.
 
-La web y Obsidian leen los mismos datos académicos y comparten el núcleo de fechas. Obsidian conserva su integración nativa con el editor de Markdown, el sistema de archivos y los diálogos; la web usa el navegador y GitHub para esas operaciones. Las ediciones realizadas desde la web actualizan los datos o archivos correspondientes tanto en `main` como en `gh-pages`, para que el móvil vea el cambio publicado inmediatamente.
+La web carga una copia inicial incluida en `gh-pages` y, cuando hay token, consulta siempre `data/state.json` de `main` para obtener los datos actuales. Al guardar desde la web solo cambia `main`: tareas, grupos, horario y demás datos aparecen en otros dispositivos al sincronizar, sin redesplegar Pages. Los materiales nuevos o editados se abren desde `main` mediante la API de GitHub. `gh-pages` solo se actualiza cuando cambia la aplicación.
 
 ## Del móvil a Obsidian
 
-En la web, **GitHub ⚙** permite introducir un token con permiso `Contents: read/write`. Se conserva solo en la sesión del navegador. **Sincronizar** guarda tareas, grupos, proyectos y otros datos editables en `data/state.json`; la carga de material e informes Markdown también escribe en el repositorio.
+En la web, **GitHub ⚙** permite introducir un token con permiso `Contents: read/write`. Se conserva en el almacenamiento local de ese navegador. **Sincronizar** guarda tareas, grupos, proyectos y otros datos editables en `data/state.json`; la carga de material e informes Markdown también escribe en `main`.
 
-En Obsidian, usa **GitHub → Traer cambios del móvil** antes de volver a editar los mismos elementos localmente. Se ejecuta `git pull --ff-only`, se importan los elementos modificados y se conserva una copia de seguridad de los archivos que difieran. El siguiente commit local genera de nuevo el estado web combinado.
+En Obsidian, usa **GitHub → Traer cambios del móvil** antes de volver a editar los mismos elementos localmente. Se ejecuta `git fetch origin main` y se importan los elementos modificados desde el commit remoto, incluso si hay archivos locales sin commit. Los adjuntos que difieran conservan una copia de seguridad. El siguiente commit local genera de nuevo el estado combinado.
 
 Los dos PDF de más de 100 MB permanecen solo en Obsidian. El material publicado ocupa aproximadamente 914 MiB; el compilador comprueba el tamaño antes de publicar. Los archivos se descargan cuando se abren y el service worker solo guarda la interfaz.
 

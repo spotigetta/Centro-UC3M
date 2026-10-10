@@ -10,10 +10,10 @@ if(path.relative(root,out)!=='dist')throw Error('Destino de compilación fuera d
 const checkOnly=process.argv.includes('--check');
 const compatRoot=process.argv.includes('--compat-root');
 const noMaterial=process.argv.includes('--without-material');
-const required=['index.html','app.js','styles.css','sw.js','shared/academic-core.js','shared/overview.js'];
+const required=['index.html','app.js','styles.css','unified.css','sw.js','shared/academic-core.js','shared/overview.js','shared/markdown.js'];
 for(const file of required)if(!fs.statSync(path.join(source,file)).isFile())throw Error('Falta src/'+file);
 const vm=require('node:vm');
-const browserBundle=['shared/academic-core.js','shared/overview.js','app.js'].map(file=>fs.readFileSync(path.join(source,file),'utf8')).join('\n');
+const browserBundle=['shared/academic-core.js','shared/overview.js','shared/markdown.js','app.js'].map(file=>fs.readFileSync(path.join(source,file),'utf8')).join('\n');
 new vm.Script(browserBundle,{filename:'centro-uc3m-browser.js'});
 const state=JSON.parse(fs.readFileSync(data,'utf8'));
 if(state.version!==3||!Array.isArray(state.subjects)||!Array.isArray(state.files))throw Error('data/state.json no tiene el formato esperado');
@@ -32,15 +32,16 @@ for(const entry of state.files){
 }
 if(materialBytes>1000*1024*1024)throw Error('El material supera 1 GiB; revisa el tamaño del sitio antes de publicarlo');
 const hash=crypto.createHash('sha256');
-for(const file of ['app.js','styles.css','index.html','shared/academic-core.js','shared/overview.js'])hash.update(fs.readFileSync(path.join(source,file)));
+for(const file of ['app.js','styles.css','unified.css','index.html','shared/academic-core.js','shared/overview.js','shared/markdown.js'])hash.update(fs.readFileSync(path.join(source,file)));
 hash.update(fs.readFileSync(data));
 const buildId=hash.digest('hex').slice(0,12);
 if(checkOnly){console.log(`Build comprobado: ${state.subjects.length} asignaturas, ${materialCount} archivos, ${(materialBytes/1024/1024).toFixed(1)} MiB, versión ${buildId}.`);process.exit(0)}
 if(compatRoot){
   for(const file of ['index.html','app.js'])fs.writeFileSync(path.join(root,file),fs.readFileSync(path.join(source,file),'utf8').replaceAll('__UC3M_BUILD__',buildId));
   fs.copyFileSync(path.join(source,'styles.css'),path.join(root,'styles.css'));
+  fs.copyFileSync(path.join(source,'unified.css'),path.join(root,'unified.css'));
   fs.mkdirSync(path.join(root,'shared'),{recursive:true});
-  for(const file of ['academic-core.js','overview.js'])fs.copyFileSync(path.join(source,'shared',file),path.join(root,'shared',file));
+  for(const file of ['academic-core.js','overview.js','markdown.js'])fs.copyFileSync(path.join(source,'shared',file),path.join(root,'shared',file));
   fs.writeFileSync(path.join(root,'sw.js'),fs.readFileSync(path.join(source,'sw.js'),'utf8').replaceAll('__UC3M_BUILD__',buildId));
   console.log(`Raíz compatible actualizada: versión ${buildId}.`);
   process.exit(0);
