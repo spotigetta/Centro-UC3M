@@ -181,7 +181,7 @@ document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.datase
     for(const s of subjects()){const option=node('option','',s.name);option.value=s.name;$('#subject-filter').append(option)}
     render();
     await sync();
-    setInterval(()=>{if(document.visibilityState==='visible')void sync()},token?20000:120000);
+    setInterval(()=>{if(document.visibilityState==='visible')void sync()},token?8000:120000);
     window.addEventListener('focus',()=>void sync());
     document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void sync()});
     window.addEventListener('storage',event=>{if(event.key==='uc3m-state-v3'&&!pending.length)void sync()});
