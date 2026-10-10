@@ -1,6 +1,7 @@
 'use strict';
 const $=s=>document.querySelector(s),node=(tag,cls='',value)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=String(value);return e};
 let state,baseline,sha='',dirty=false,tab=new URLSearchParams(location.search).get('tab')||'board',filter='',query='',month=new Date(),repo=localStorage.getItem('uc3m-repo')||'spotigetta/Centro-UC3M',token=localStorage.getItem('uc3m-token')||'',geminiKey=sessionStorage.getItem('uc3m-gemini-key')||'',geminiModel=sessionStorage.getItem('uc3m-gemini-model')||'gemini-2.5-flash',assistantAttachments=[],assistantHistory=JSON.parse(localStorage.getItem('uc3m-assistant-history')||'[]');
+let pending=JSON.parse(localStorage.getItem('uc3m-pending-v4')||'[]'),syncing=false,lastSynced=false,retryTimer;
 const contentBranch='main';
 const today=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
 const subjects=()=>state.subjects||[],subject=id=>subjects().find(s=>s.id===id),events=()=>[...(state.dataset?.events||[])].sort((a,b)=>a.date.localeCompare(b.date)||(a.time||'').localeCompare(b.time||''));
@@ -9,7 +10,27 @@ function link(parent,label,url,cls=''){if(!url)return;const e=node('a',cls,label
 function field(parent,label,value='',type='text'){const box=node('label');box.append(node('span','',label));const e=node(type==='textarea'?'textarea':type==='select'?'select':'input');if(e.tagName==='INPUT')e.type=type;e.value=value;box.append(e);parent.append(box);return e}
 function modal(title,draw){const body=$('#modal-body');body.replaceChildren(node('h2','',title));draw(body);$('#modal').showModal()}
 function status(message){$('#status').textContent=message}
-function changed(kind,id){state.changes??={};state.changes[kind]??=[];if(!state.changes[kind].includes(id))state.changes[kind].push(id);dirty=true;state.updated=new Date().toISOString();localStorage.setItem('uc3m-state-v3',JSON.stringify(state));localStorage.setItem('uc3m-dirty-v3','1');render()}
+function changePatch(kind,id){
+  if(kind==='groups')return {kind,id,value:structuredClone(state.groups?.[id]??null)};
+  if(kind==='academicEdits')return {kind,id,value:structuredClone(state.editableData)};
+  const list=kind==='files'?'files':kind;
+  return {kind,id,value:structuredClone((state[list]||[]).find(item=>(kind==='files'?item.path:item.id)===id)??null)};
+}
+function applyPatches(remote,patches){
+  if(!patches.length)return structuredClone(remote);
+  const merged=structuredClone(remote);
+  for(const patch of patches){
+    if(patch.kind==='groups'){merged.groups??={};if(patch.value===null)delete merged.groups[patch.id];else merged.groups[patch.id]=patch.value;continue}
+    if(patch.kind==='academicEdits'){merged.editableData=patch.value;continue}
+    const kind=patch.kind,key=kind==='files'?'path':'id';merged[kind]??=[];
+    const index=merged[kind].findIndex(item=>item[key]===patch.id);
+    if(patch.value===null){if(index>=0)merged[kind].splice(index,1)}
+    else if(index>=0)merged[kind][index]=patch.value;
+    else merged[kind].push(patch.value);
+  }
+  merged.updated=new Date().toISOString();return merged;
+}
+function changed(kind,id){state.changes??={};state.changes[kind]??=[];if(!state.changes[kind].includes(id))state.changes[kind].push(id);pending.push(changePatch(kind,id));dirty=true;state.updated=new Date().toISOString();localStorage.setItem('uc3m-pending-v4',JSON.stringify(pending));localStorage.setItem('uc3m-state-v3',JSON.stringify(state));localStorage.setItem('uc3m-dirty-v3','1');render();void sync()}
 function cardArea(c){return c.meta?.area||c.meta?.areas?.[0]||''}
 function editCard(old,chosen){modal(old?'Editar tarjeta':'Nueva tarjeta',body=>{const title=field(body,'Actividad',old?.title||''),area=field(body,'Asignatura','','select'),due=field(body,'Fecha límite',old?.meta?.due||'','date'),lane=field(body,'Columna',old?.lane||'Entrada','select');for(const s of subjects()){const o=node('option','',s.name);o.value=s.name;area.append(o)}area.value=old?cardArea(old):chosen?.name||subjects()[0]?.name||'';for(const name of ['Entrada','En curso','Finalizada']){const o=node('option','',name);o.value=name;lane.append(o)}lane.value=old?.lane||'Entrada';button(body,'Guardar',()=>{if(!title.value.trim())return;const c=old||{id:crypto.randomUUID(),checked:false,meta:{}};c.title=title.value.trim();c.lane=lane.value;c.meta={...c.meta,id:c.id,area:area.value,areas:[area.value],due:due.value};if(!old)(state.cards??=[]).push(c);$('#modal').close();changed('cards',c.id)},'primary')})}
 function editGroup(s){const old=state.groups?.[s.id]||{};modal('Grupo · '+s.name,body=>{const name=field(body,'Número o nombre',old.name||''),members=field(body,'Integrantes, uno por línea',old.members||'','textarea'),work=field(body,'Proyecto o práctica',old.work||'','textarea'),notes=field(body,'Notas',old.notes||'','textarea');button(body,'Guardar',()=>{state.groups??={};state.groups[s.id]={name:name.value.trim(),members:members.value.trim(),work:work.value.trim(),notes:notes.value.trim()};$('#modal').close();changed('groups',s.id)},'primary')})}
@@ -101,36 +122,48 @@ function addAssistantFile(){const input=document.createElement('input');input.ty
 async function askAssistant(question,result){try{if(!geminiKey)throw Error('Configura primero una clave nueva de Gemini');if(!question.trim())throw Error('Escribe una pregunta');result.replaceChildren(node('p','muted','Revisando horario, calendario, evaluación y fuentes…'));const context={now:new Date().toISOString(),timezone:'Europe/Madrid',approvedAcademicContext:state.normalizedAcademic,editableData:state.editableData,panel:{subjects:state.subjects,groups:state.groups,schedule:state.schedule,cards:state.cards,projects:state.projects,notes:state.notes,activities:state.activities},attachments:assistantAttachments},serialized=JSON.stringify(context);if(serialized.length>420000)throw Error('El contexto seleccionado es demasiado grande');const instructions='Eres el asistente académico privado del Centro UC3M. Responde en español con máxima precisión usando exclusivamente el contexto. Distingue fechas confirmadas, inferidas, provisionales y desconocidas. Para decir por dónde va una asignatura, relaciona la fecha actual con horario, cronogramas, entregas y progreso, sin inventar sesiones. Cita sourceId y ruta JSON para cada dato académico importante. Si falta información, dilo. Nunca afirmes haber modificado datos. Solo propón cambios si el usuario lo pide explícitamente. Solo puedes proponer add/update/delete de task, event, practice_progress o note en editableData. Nunca modifiques fuentes aprobadas. update/delete solo puede usar ids usr- existentes.';const response=await fetch('https://generativelanguage.googleapis.com/v1beta/models/'+encodeURIComponent(geminiModel)+':generateContent',{method:'POST',headers:{'x-goog-api-key':geminiKey,'Content-Type':'application/json'},body:JSON.stringify({systemInstruction:{parts:[{text:instructions}]},contents:[{role:'user',parts:[{text:'PREGUNTA:\n'+question.trim()+'\n\nCONTEXTO:\n'+serialized}]}],generationConfig:{temperature:.1,responseMimeType:'application/json',responseJsonSchema:assistantSchema}})}),payload=await response.json();if(!response.ok)throw Error(payload.error?.message||'Gemini '+response.status);const text=(payload.candidates?.[0]?.content?.parts||[]).map(x=>x.text||'').join('');if(!text)throw Error('Gemini no devolvió respuesta');const answer=JSON.parse(text),proposals=validateAssistantChanges(answer.proposedChanges||[]);const answerView=node('div','uc3m-assistant-answer');answerView.innerHTML=window.UC3MMarkdown.render(answer.answer||'Sin respuesta');result.replaceChildren(answerView);if(answer.citations?.length){const details=node('details','uc3m-assistant-citations');details.append(node('summary','',`Fuentes utilizadas · ${answer.citations.length}`));for(const cite of answer.citations)details.append(node('p','',`${cite.sourceId} · ${cite.location}\n${cite.claim}`));result.append(details)}for(const warning of answer.warnings||[])result.append(node('p','uc3m-assistant-warning',warning));if(proposals.length){const preview=node('div','uc3m-change-preview');preview.append(node('h4','',`Cambios propuestos · ${proposals.length}`));for(const p of proposals){const card=node('div','uc3m-change-card');card.append(node('strong','',`${p.operation.toUpperCase()} · ${p.entity}${p.id?' · '+p.id:''}`));if(p.operation!=='delete')card.append(node('pre','',JSON.stringify(p.data,null,2)));card.append(node('p','','Motivo: '+p.reason),node('small','','Evidencia: '+p.evidence));preview.append(card)}button(preview,'Aplicar exactamente estos cambios',()=>{applyAssistantChanges(proposals,context.editableData.revision);render()},'primary');result.append(preview)}assistantHistory.push({role:'user',text:question.trim()},{role:'assistant',text:answer.answer||''});assistantHistory=assistantHistory.slice(-30);localStorage.setItem('uc3m-assistant-history',JSON.stringify(assistantHistory));status('Respuesta recibida')}catch(e){result.replaceChildren(node('p','uc3m-assistant-warning',e.message));status(e.message)}}
 function assistant(root){const head=node('div','uc3m-assistant-head'),title=node('div');title.append(node('h2','','Asistente UC3M'),node('p','','Horario, calendario, evaluación, prácticas y archivos seleccionados.'));head.append(title);button(head,'Configurar Gemini',assistantSettings);root.append(head);const context=node('details','uc3m-assistant-context');context.append(node('summary','','Contexto incluido'));context.append(node('p','muted','7 fuentes académicas completas · panel actual · solo los archivos que tú añadas.'));const chips=node('div','uc3m-assistant-files');for(const [index,file]of assistantAttachments.entries())button(chips,file.file+' ×',()=>{assistantAttachments.splice(index,1);render()});context.append(chips);button(context,'Añadir apunte, informe o JSON',addAssistantFile);root.append(context);const history=node('div','uc3m-assistant-history');for(const turn of assistantHistory){const box=node('div','uc3m-chat-turn '+turn.role);const textView=node('div','uc3m-chat-text');textView.innerHTML=window.UC3MMarkdown.render(turn.text);box.append(node('small','',turn.role==='user'?'Tú':'Asistente UC3M'),textView);history.append(box)}root.append(history);const compose=node('div','uc3m-assistant-compose'),question=field(compose,'Pregunta','','textarea'),result=node('div','uc3m-assistant-result');question.placeholder='Ej.: ¿Qué tengo esta semana y cuánto pesa cada entrega?';button(compose,'Preguntar a Gemini',()=>askAssistant(question.value,result),'primary');button(compose,'Limpiar conversación',()=>{assistantHistory=[];localStorage.removeItem('uc3m-assistant-history');render()});root.append(compose,result)}
 function search(root){const q=query.toLocaleLowerCase('es'),hit=(...parts)=>parts.join(' ').toLocaleLowerCase('es').includes(q),results=[];for(const s of subjects())if(hit(s.name))results.push(['Asignatura',s.name,'']);for(const c of state.cards||[])if(hit(c.title,cardArea(c)))results.push(['Tarjeta',c.title,cardArea(c)]);for(const p of state.projects||[])if(hit(p.name,p.description))results.push(['Proyecto',p.name,'']);for(const n of state.notes||[])if(hit(n.title,n.text))results.push(['Apunte',n.title,'']);for(const e of events())if(hit(e.title,e.kind,subject(e.subject)?.name))results.push([e.kind,e.title,e.date]);for(const f of state.files||[])if(hit(f.path))results.push(['Archivo',f.name,f.path,f.url||urlFor(f.path)]);root.append(node('h2','section-title',results.length+' resultados'));for(const [kind,title,detail,url]of results.slice(0,200)){const row=node('div','uc3m-search-result');row.append(node('b','',kind+' · '));if(url)link(row,title,url);else row.append(node('span','',title));row.append(node('small','',detail));root.append(row)}}
-function render(){if(!state)return;if(tab==='schedule')tab='calendar';digest();for(const b of document.querySelectorAll('.tabs button'))b.setAttribute('aria-current',b.dataset.tab===tab?'page':'false');const root=$('#content');root.replaceChildren();if(query)search(root);else({board,calendar,projects,notes,reports,assistant}[tab]||board)(root);if(!query&&tab==='board')compactWebBoard(root);status(dirty?'Cambios pendientes de guardar en GitHub':'Sincronizado · '+new Date(state.updated||Date.now()).toLocaleString('es-ES'))}
+function render(){if(!state)return;if(tab==='schedule')tab='calendar';digest();for(const b of document.querySelectorAll('.tabs button'))b.setAttribute('aria-current',b.dataset.tab===tab?'page':'false');const root=$('#content');root.replaceChildren();if(query)search(root);else({board,calendar,projects,notes,reports,assistant}[tab]||board)(root);if(!query&&tab==='board')compactWebBoard(root);status(dirty?'Guardando cambios automáticamente…':lastSynced?'Sincronizado con GitHub':'Conectando con los datos actuales…')}
 function credentials(){if(!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(repo))throw Error('Configura usuario/repositorio');if(!token)throw Error('Introduce un token con permiso Contents: read/write')}
-async function api(url,options={}){const response=await fetch(url,{...options,headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',Authorization:'Bearer '+token,...options.headers}}),result=await response.json().catch(()=>({}));if(!response.ok)throw Error('GitHub '+response.status+': '+(result.message||'Error'));return result}
-async function putContent(pathInRepo,content,branch,message){const url='https://api.github.com/repos/'+repo+'/contents/'+pathInRepo;let current;try{current=await api(url+'?ref='+encodeURIComponent(branch))}catch(e){if(!e.message.startsWith('GitHub 404:'))throw e}return api(url,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,content,sha:current?.sha,branch})})}
+async function api(url,options={}){const headers={Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28',...options.headers};if(token)headers.Authorization='Bearer '+token;const response=await fetch(url,{...options,headers,cache:'no-store'}),result=await response.json().catch(()=>({}));if(!response.ok)throw Error('GitHub '+response.status+': '+(result.message||'Error'));return result}
+async function putContent(pathInRepo,content,branch,message,knownSha){const url='https://api.github.com/repos/'+repo+'/contents/'+pathInRepo;let current;if(!knownSha){try{current=await api(url+'?ref='+encodeURIComponent(branch))}catch(e){if(!e.message.startsWith('GitHub 404:'))throw e}}return api(url,{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({message,content,sha:knownSha||current?.sha,branch})})}
 
 const to64=obj=>{const bytes=new TextEncoder().encode(JSON.stringify(obj,null,2)+'\n');let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.subarray(i,i+8192));return btoa(binary)},from64=s=>JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g,'')),x=>x.charCodeAt(0))));
 async function readMain(){
-  credentials();
   const remote=await api('https://api.github.com/repos/'+repo+'/contents/data/state.json?ref=main&t='+Date.now(),{cache:'no-store'});
   return {data:from64(remote.content),sha:remote.sha};
 }
 async function sync(){
+  if(syncing)return;
+  syncing=true;clearTimeout(retryTimer);
   try{
-    status('Consultando los datos de GitHub…');
-    const remote=await readMain();
-    if(dirty){
-      if(sha&&sha!==remote.sha)throw Error('Hay cambios nuevos en GitHub. Trae los cambios antes de guardar.');
-      if(!sha&&JSON.stringify(remote.data)!==JSON.stringify(baseline))throw Error('Hay cambios nuevos en GitHub. Trae los cambios antes de guardar.');
-      const saved=await putContent('data/state.json',to64(state),contentBranch,'Actualizar datos del Centro UC3M');
-      sha=saved.content.sha;dirty=false;baseline=structuredClone(state);
-      localStorage.removeItem('uc3m-dirty-v3');
-      status('Datos guardados en main. La aplicación no se ha redesplegado.');
-    }else{
-      state=remote.data;baseline=structuredClone(state);sha=remote.sha;
-      localStorage.setItem('uc3m-state-v3',JSON.stringify(state));
-      render();status('Datos actualizados desde main');
+    let remote=await readMain();
+    if(pending.length){
+      credentials();
+      let conflicts=0;
+      while(pending.length){
+        const batch=pending.slice();
+        const merged=applyPatches(remote.data,batch);
+        try{
+          const saved=await putContent('data/state.json',to64(merged),contentBranch,'Actualizar datos del Centro UC3M',remote.sha);
+          remote={data:merged,sha:saved.content.sha};
+          pending.splice(0,batch.length);
+          localStorage.setItem('uc3m-pending-v4',JSON.stringify(pending));
+        }catch(error){
+          if(!/^GitHub (409|422):/.test(error.message))throw error;
+          if(++conflicts>=5)throw Error('Otros cambios siguen llegando. Reintentaré el guardado en unos segundos.');
+          remote=await readMain();
+        }
+      }
     }
-  }catch(e){status(e.message);alert(e.message)}
+    sha=remote.sha;baseline=structuredClone(remote.data);
+    state=applyPatches(remote.data,pending);dirty=!!pending.length;lastSynced=true;
+    localStorage.setItem('uc3m-state-v3',JSON.stringify(state));
+    if(!dirty)localStorage.removeItem('uc3m-dirty-v3');
+    render();
+  }catch(e){status('Sin sincronizar · '+e.message);retryTimer=setTimeout(()=>void sync(),10000)}
+  finally{syncing=false}
 }
-function settings(){modal('Conectar GitHub',body=>{body.append(node('p','muted','El token se guarda únicamente en este navegador. Para editar necesita permiso Contents: read/write solo en este repositorio.'));const r=field(body,'Usuario/repositorio',repo),t=field(body,'Token de GitHub',token,'password');button(body,'Guardar en este dispositivo',()=>{repo=r.value.trim();token=t.value.trim();localStorage.setItem('uc3m-repo',repo);localStorage.setItem('uc3m-token',token);$('#modal').close();status('Conexión guardada en este dispositivo');if(!dirty)sync()},'primary');button(body,'Olvidar token',()=>{token='';localStorage.removeItem('uc3m-token');$('#modal').close();status('Token eliminado de este dispositivo')})})}
+function settings(){modal('Conectar GitHub',body=>{body.append(node('p','muted','El token se guarda únicamente en este navegador. Para editar necesita permiso Contents: read/write solo en este repositorio.'));const r=field(body,'Usuario/repositorio',repo),t=field(body,'Token de GitHub',token,'password');button(body,'Guardar en este dispositivo',()=>{repo=r.value.trim();token=t.value.trim();localStorage.setItem('uc3m-repo',repo);localStorage.setItem('uc3m-token',token);$('#modal').close();status('Conexión guardada en este dispositivo');void sync()},'primary');button(body,'Olvidar token',()=>{token='';localStorage.removeItem('uc3m-token');$('#modal').close();status('Token eliminado de este dispositivo')})})}
 function uploadDialog(s){modal('Subir material · '+s.name,body=>{body.append(node('p','muted','El archivo quedará vinculado a esta asignatura y se guardará en el repositorio de GitHub.'));const picker=field(body,'Archivo','','file');button(body,'Subir a GitHub',async()=>{try{credentials();const file=picker.files?.[0];if(!file)throw Error('Selecciona un archivo');if(file.size>90*1024*1024)throw Error('El archivo supera el límite individual de 90 MB');const relative=s.folder+'/'+file.name,existing=(state.files||[]).find(f=>f.path===relative),publishedBytes=(state.files||[]).filter(f=>!f.localOnly).reduce((sum,f)=>sum+(f.size||0),0)-(existing&&!existing.localOnly?existing.size||0:0)+file.size;status('Subiendo '+file.name+'…');const pathInRepo='material/'+relative.split('/').map(encodeURIComponent).join('/'),data=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=()=>reject(Error('No se pudo leer el archivo'));reader.readAsDataURL(file)}),message='Subir material UC3M: '+file.name;await putContent(pathInRepo,data,contentBranch,message);state.files??=[];state.files=state.files.filter(f=>f.path!==relative);state.files.push({subject:s.id,name:file.name,path:relative,url:'material/'+relative.split('/').map(encodeURIComponent).join('/'),size:file.size,source:'mobile'});$('#modal').close();changed('files',relative);await sync()}catch(e){status(e.message);alert(e.message)}},'primary')})}
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;query='';$('#search').value='';render()});$('#sync').onclick=sync;$('#settings').onclick=settings;$('#search').oninput=e=>{query=e.target.value.trim();render()};$('#subject-filter').onchange=e=>{filter=e.target.value;render()};
 (async()=>{
@@ -139,18 +172,19 @@ document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.datase
     if(!snapshot.ok)throw Error('Falta la copia inicial de datos');
     const initial=await snapshot.json(),local=localStorage.getItem('uc3m-state-v3');
     baseline=structuredClone(initial);
-    dirty=localStorage.getItem('uc3m-dirty-v3')==='1';
+    dirty=pending.length>0||localStorage.getItem('uc3m-dirty-v3')==='1';
     state=dirty&&local?JSON.parse(local):initial;
+    if(dirty&&!pending.length){
+      for(const [kind,ids] of Object.entries(state.changes||{}))for(const id of ids)if(['cards','groups','projects','notes','schedule','files','academicEdits'].includes(kind))pending.push(changePatch(kind,id));
+      localStorage.setItem('uc3m-pending-v4',JSON.stringify(pending));
+    }
     for(const s of subjects()){const option=node('option','',s.name);option.value=s.name;$('#subject-filter').append(option)}
     render();
-    if(token){
-      try{
-        const latest=await readMain();
-        if(!dirty){sha=latest.sha;baseline=structuredClone(latest.data);state=latest.data;localStorage.setItem('uc3m-state-v3',JSON.stringify(state));render()}
-        else if(JSON.stringify(latest.data)===JSON.stringify(initial)){sha=latest.sha;baseline=structuredClone(latest.data)}
-        else status('Hay cambios remotos posteriores a tu edición local. Revisa antes de guardar.');
-      }catch(error){status('Datos locales · '+error.message)}
-    }else status('Copia inicial · conecta GitHub para datos actuales');
+    await sync();
+    setInterval(()=>{if(document.visibilityState==='visible')void sync()},token?20000:120000);
+    window.addEventListener('focus',()=>void sync());
+    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void sync()});
+    window.addEventListener('storage',event=>{if(event.key==='uc3m-state-v3'&&!pending.length)void sync()});
     if('serviceWorker'in navigator&&location.protocol==='https:'){
       let refreshing=false;
       navigator.serviceWorker.addEventListener('controllerchange',()=>{if(refreshing)return;refreshing=true;location.reload()});
