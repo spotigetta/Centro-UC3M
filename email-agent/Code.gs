@@ -39,10 +39,11 @@ function escribirJson(name,value) {
 }
 function instalarAgente() {
   if(!PropertiesService.getScriptProperties().getProperty('GEMINI_API_KEY'))throw Error('Añade GEMINI_API_KEY en Propiedades del script antes de instalar.');
+  if(!PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN'))throw Error('Añade GITHUB_TOKEN con permiso de lectura para el resumen dominical.');
   carpetaPrivada();
-  for(const trigger of ScriptApp.getProjectTriggers())if(['revisarCorreoDiario','prepararRevisionSemanal'].includes(trigger.getHandlerFunction()))ScriptApp.deleteTrigger(trigger);
+  for(const trigger of ScriptApp.getProjectTriggers())if(['revisarCorreoDiario','prepararRevisionSemanal','revisionYResumenSemanal'].includes(trigger.getHandlerFunction()))ScriptApp.deleteTrigger(trigger);
   ScriptApp.newTrigger('revisarCorreoDiario').timeBased().everyDays(1).atHour(22).create();
-  ScriptApp.newTrigger('prepararRevisionSemanal').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(19).create();
+  ScriptApp.newTrigger('revisionYResumenSemanal').timeBased().onWeekDay(ScriptApp.WeekDay.SUNDAY).atHour(19).create();
   Logger.log('Agente instalado. Carpeta privada: '+carpetaPrivada().getUrl());
 }
 function extraerHechos(message,courseId) {

@@ -38,3 +38,9 @@ La pestaña **Asistente IA** usa las fuentes académicas, horario, calendario y 
 ## Correo académico
 
 El [agente privado de correo](email-agent/README.md) prepara una revisión diaria de Gmail con Gemini y guarda las evidencias y propuestas en Drive privado. La pestaña **Correo académico** importa `propuestas.json` localmente, permite aceptar o descartar cada hecho y sincroniza los aceptados con el JSON académico del Centro. El correo completo, los identificadores de mensaje y la clave de Gemini no se publican en GitHub Pages.
+
+## Calendario y avisos
+
+La portada muestra pendientes, proyectos y la próxima cita; las demás pestañas van directamente a su contenido. En el calendario se puede abrir cada evento para ver asignatura, hora, tipo, aula y grupo. Los eventos personales se pueden crear, editar y eliminar. Los importados del cronograma se pueden ocultar sin alterar la fuente oficial. Las tarjetas, proyectos, apuntes y datos aceptados del correo se pueden eliminar. Los informes se pueden quitar de la lista del Centro sin borrar el archivo original de Obsidian.
+
+**✦ Avisos** muestra un plan de tres semanas con prácticas, exámenes y entregas, tareas y proyectos abiertos. Omite las clases de teoría ordinarias y separa los eventos provisionales o dependientes de un grupo aún no apuntado. Tras conceder permiso, la PWA muestra recordatorios cuando se abre y sincroniza. Para recibir el plan dominical incluso con la PWA cerrada, el agente privado de Apps Script debe estar instalado con `GITHUB_TOKEN` de lectura y permiso de envío de correo; lo envía a la cuenta propietaria del script. Las notificaciones push nativas con la PWA cerrada requieren un servicio de envío adicional.
