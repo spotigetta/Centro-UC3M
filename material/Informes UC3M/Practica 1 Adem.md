@@ -28,18 +28,16 @@ uc3m-report: 1
 - Papel casillero (todos, no en grupo) a compás regla y mano, edificio 1 antes del 16-oct.
 	- solo las trayectorias (precisión mínima de 12 puntos)
 	- 
-## Material y equipos
 
 
-## Procedimiento
 
+👤 PABLO: Mates, MATLAB y Cognados
 
-## Cálculos y resultados
+g) Ecuaciones paramétricas analíticas de C, D, E y F.
 
+h) Código en MATLAB para C, D, E y F, y clasificación según la curva de Soni.
 
-## Conclusiones
+i) Cálculo y representación de los mecanismos cognados del punto F.
 
-
-## Bibliografía
 
 <!-- uc3m-report:{"version":1,"subject":"Ampliación de Diseño y Ensayo de Máquinas","degree":"Máster en Ingeniería Industrial","year":"2026-2027 · 1C","authors":"","professor":"","campus":"Leganés","school":"Escuela Politécnica Superior","date":"","subtitle":"","color":"#b66b16","font":"serif"} -->
