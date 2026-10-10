@@ -5,6 +5,9 @@ uc3m-report: 1
 
 # Practica 1 Adem
 
+
+
+PROBANDO EN WEB
 ## Objetivos
 - determinar la clase de cuadrilátero articulado 1-2--34
 - representración por sw:
