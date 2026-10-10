@@ -168,7 +168,7 @@ function uploadDialog(s){modal('Subir material · '+s.name,body=>{body.append(no
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.tab;query='';$('#search').value='';render()});$('#sync').onclick=sync;$('#settings').onclick=settings;$('#search').oninput=e=>{query=e.target.value.trim();render()};$('#subject-filter').onchange=e=>{filter=e.target.value;render()};
 (async()=>{
   try{
-    const snapshot=await fetch('data/state.json?v=7bb7ee13622a',{cache:'no-store'});
+    const snapshot=await fetch('data/state.json?v=b194bd791dff',{cache:'no-store'});
     if(!snapshot.ok)throw Error('Falta la copia inicial de datos');
     const initial=await snapshot.json(),local=localStorage.getItem('uc3m-state-v3');
     baseline=structuredClone(initial);
@@ -181,14 +181,14 @@ document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.datase
     for(const s of subjects()){const option=node('option','',s.name);option.value=s.name;$('#subject-filter').append(option)}
     render();
     await sync();
-    setInterval(()=>{if(document.visibilityState==='visible')void sync()},token?20000:120000);
+    setInterval(()=>{if(document.visibilityState==='visible')void sync()},token?8000:120000);
     window.addEventListener('focus',()=>void sync());
     document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void sync()});
     window.addEventListener('storage',event=>{if(event.key==='uc3m-state-v3'&&!pending.length)void sync()});
     if('serviceWorker'in navigator&&location.protocol==='https:'){
       let refreshing=false;
       navigator.serviceWorker.addEventListener('controllerchange',()=>{if(refreshing)return;refreshing=true;location.reload()});
-      const registration=await navigator.serviceWorker.register('sw.js?v=7bb7ee13622a',{updateViaCache:'none'});
+      const registration=await navigator.serviceWorker.register('sw.js?v=b194bd791dff',{updateViaCache:'none'});
       registration.update().catch(()=>{});
     }
   }catch(error){status('No se pudo cargar: '+error.message)}
