@@ -1,4 +1,5 @@
 'use strict';
+(function(global){
 function renderUC3MOverview(root,model){
   const doc=root.ownerDocument;
   const el=(tag,cls,text)=>{const node=doc.createElement(tag);if(cls)node.className=cls;if(text!==undefined)node.textContent=String(text);return node};
@@ -32,4 +33,5 @@ function renderUC3MOverview(root,model){
   }else upcoming.append(el('p','overview-empty uc3m-overview-empty','No hay próximos eventos'));
 }
 if(typeof module!=='undefined'&&module.exports)module.exports=renderUC3MOverview;
-if(typeof window!=='undefined')window.renderUC3MOverview=renderUC3MOverview;
+if(global)global.renderUC3MOverview=renderUC3MOverview;
+})(typeof window!=='undefined'?window:null);

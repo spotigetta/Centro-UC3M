@@ -12,6 +12,9 @@ const compatRoot=process.argv.includes('--compat-root');
 const noMaterial=process.argv.includes('--without-material');
 const required=['index.html','app.js','styles.css','sw.js','shared/academic-core.js','shared/overview.js'];
 for(const file of required)if(!fs.statSync(path.join(source,file)).isFile())throw Error('Falta src/'+file);
+const vm=require('node:vm');
+const browserBundle=['shared/academic-core.js','shared/overview.js','app.js'].map(file=>fs.readFileSync(path.join(source,file),'utf8')).join('\n');
+new vm.Script(browserBundle,{filename:'centro-uc3m-browser.js'});
 const state=JSON.parse(fs.readFileSync(data,'utf8'));
 if(state.version!==3||!Array.isArray(state.subjects)||!Array.isArray(state.files))throw Error('data/state.json no tiene el formato esperado');
 let materialBytes=0,materialCount=0;
@@ -34,7 +37,8 @@ hash.update(fs.readFileSync(data));
 const buildId=hash.digest('hex').slice(0,12);
 if(checkOnly){console.log(`Build comprobado: ${state.subjects.length} asignaturas, ${materialCount} archivos, ${(materialBytes/1024/1024).toFixed(1)} MiB, versión ${buildId}.`);process.exit(0)}
 if(compatRoot){
-  for(const file of ['index.html','app.js','styles.css'])fs.copyFileSync(path.join(source,file),path.join(root,file));
+  for(const file of ['index.html','app.js'])fs.writeFileSync(path.join(root,file),fs.readFileSync(path.join(source,file),'utf8').replaceAll('__UC3M_BUILD__',buildId));
+  fs.copyFileSync(path.join(source,'styles.css'),path.join(root,'styles.css'));
   fs.mkdirSync(path.join(root,'shared'),{recursive:true});
   for(const file of ['academic-core.js','overview.js'])fs.copyFileSync(path.join(source,'shared',file),path.join(root,'shared',file));
   fs.writeFileSync(path.join(root,'sw.js'),fs.readFileSync(path.join(source,'sw.js'),'utf8').replaceAll('__UC3M_BUILD__',buildId));
@@ -50,5 +54,6 @@ fs.mkdirSync(path.join(out,'data'),{recursive:true});
 fs.copyFileSync(data,path.join(out,'data','state.json'));
 const worker=path.join(out,'sw.js');
 fs.writeFileSync(worker,fs.readFileSync(worker,'utf8').replaceAll('__UC3M_BUILD__',buildId));
+for(const file of ['index.html','app.js']){const target=path.join(out,file);fs.writeFileSync(target,fs.readFileSync(target,'utf8').replaceAll('__UC3M_BUILD__',buildId))}
 if(!noMaterial)for(const {relative,file} of published){const target=path.join(out,'material',relative);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(file,target)}
 console.log(`Centro UC3M compilado en dist/: ${state.subjects.length} asignaturas, ${noMaterial?0:materialCount} archivos, versión ${buildId}.`);

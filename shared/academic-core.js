@@ -1,4 +1,5 @@
 'use strict';
+(function(global){
 // Independent, versioned extension. Legacy card/studio JSON remains readable.
 const marker = /^<!-- uc3m-center:(.*) -->$/m;
 const colors = ['#000066','#005b8e','#32614b','#754b82','#84551b'];
@@ -49,4 +50,5 @@ function timeRange(item) {
 }
 const UC3MShared={read,write,subjectsOf,dayKey,occurs,events,validColor,escapeHTML,timeRange};
 if(typeof module!=='undefined'&&module.exports)module.exports=UC3MShared;
-if(typeof window!=='undefined')window.UC3MShared=UC3MShared;
+if(global)global.UC3MShared=UC3MShared;
+})(typeof window!=='undefined'?window:null);
