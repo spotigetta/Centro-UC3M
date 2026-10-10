@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated": "2026-10-10T12:55:09.051Z",
+  "updated": "2026-10-10T12:55:23.740Z",
   "boardHash": "f17fc787515175ef86a56fd409a0e33fc5dca5ae58ee5c78470177e8cc09d6ac",
   "boardMarkdown": "---\ntello-kanban: true\nuc3m-center: 1\ntags: [uc3m/estudio]\n---\nr\n## Entrada\n- [ ] PRÁCTICA 1 <br> - MATLAB <br> - HOJA A MANO <!-- tello:{\"id\":\"ae7e9b22-69f1-4a94-9146-1cea6e31a7c7\",\"area\":\"Ampliación de Diseño y Ensayo de Máquinas\",\"priority\":\"Media\",\"pdca\":\"\",\"areas\":[\"Ampliación de Diseño y Ensayo de Máquinas\"],\"due\":\"2026-10-13\",\"start\":\"\",\"time\":\"\",\"repeat\":\"\",\"weekdays\":[],\"monthday\":1,\"until\":\"\",\"project\":\"\",\"links\":\"\"} -->\n- [x] Preparar parcial 4 oct <!-- tello:{\"id\":\"d328f2e6-edad-44f2-908d-7816e42c5b9c\",\"area\":\"Calor y Frío Industrial\",\"priority\":\"Media\",\"pdca\":\"\",\"areas\":[\"Calor y Frío Industrial\"],\"due\":\"2026-10-04\",\"start\":\"\",\"time\":\"\",\"repeat\":\"\",\"weekdays\":[],\"monthday\":1,\"until\":\"\",\"project\":\"\",\"links\":\"\"} -->\n\n\n## En curso\n\n## Finalizada\n\n<!-- uc3m-center:{\"version\":1,\"subjects\":[{\"id\":\"calor-frio\",\"name\":\"Calor y Frío Industrial\",\"color\":\"#c14838\",\"icon\":\"flame\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 1C\",\"folder\":\"Calor y Frío Industrial\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206184\",\"links\":[\"https://aulaglobal.uc3m.es/course/view.php?id=211069\",\"2º CURSO 1er cuatrimestre/Calor y Frío Industrial.pdf\"],\"font\":\"serif\",\"chatURL\":\"https://chatgpt.com/g/g-p-68c823ca97d08191942e8cd5cf5335da/project\"},{\"id\":\"estructuras\",\"name\":\"Ingeniería Estructural\",\"color\":\"#754b82\",\"icon\":\"building-2\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 1C\",\"folder\":\"Ingeniería Estructural\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206193\",\"links\":[\"https://aulaglobal.uc3m.es/course/view.php?id=210839\",\"2º CURSO 1er cuatrimestre/Ingeniería Estructural.pdf\"],\"font\":\"serif\",\"chatURL\":\"https://chatgpt.com/g/g-p-68c92b4c7db8819185ac64177d8d7bb1/project\"},{\"id\":\"fuentes\",\"name\":\"Fuentes de Energía\",\"color\":\"#177a63\",\"icon\":\"zap\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 1C\",\"folder\":\"Fuentes de Energía\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206232\",\"links\":[\"https://aulaglobal.uc3m.es/course/view.php?id=210827\",\"2º CURSO 1er cuatrimestre/Fuentes de Energía.pdf\"],\"font\":\"serif\",\"chatURL\":\"https://chatgpt.com/g/g-p-6abac67e12108191a57b13c7eaa40a82/project\"},{\"id\":\"fabricacion\",\"name\":\"Sistemas Integrados de Fabricación\",\"folder\":\"Sistemas Integrados de Fabricación\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206233\",\"period\":\"2026-2027 · 1C\",\"links\":[\"2º CURSO 1er cuatrimestre/Sistemas Integrados de Fabricación.pdf\"],\"font\":\"serif\",\"color\":\"#0d6a89\",\"icon\":\"factory\",\"chatURL\":\"https://chatgpt.com/g/g-p-6abacde7c70c81919d1d1bbf077dd0a5/project\"},{\"id\":\"adye\",\"name\":\"Ampliación de Diseño y Ensayo de Máquinas\",\"color\":\"#b66b16\",\"icon\":\"cog\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 1C\",\"folder\":\"ADEM\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206238\",\"links\":[\"2º CURSO 1er cuatrimestre/Ampliación de Diseño y Ensayo de Máquinas.pdf\"],\"font\":\"serif\",\"chatURL\":\"https://chatgpt.com/g/g-p-6aba871c02c48191b1929ffd2dc981f4/project\"},{\"id\":\"dspl\",\"name\":\"Diseño de Sistemas Productivos y Logísticos\",\"color\":\"#364ba1\",\"icon\":\"boxes\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 1C\",\"folder\":\"Diseño de Sistemas Productivos y Logísticos\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206242\",\"links\":[\"https://aulaglobal.uc3m.es/course/view.php?id=211068\",\"2º CURSO 1er cuatrimestre/Diseño de Sistemas Productivos y Logísticos.pdf\"],\"font\":\"serif\",\"chatURL\":\"https://chatgpt.com/g/g-p-6abacec91d2481918eaca1af569bda40/project\"}],\"cards\":{\"d328f2e6-edad-44f2-908d-7816e42c5b9c\":{\"kind\":\"Tarea\"},\"ae7e9b22-69f1-4a94-9146-1cea6e31a7c7\":{\"kind\":\"Tarea\"}},\"projects\":{},\"notes\":{},\"pastSubjects\":[{\"id\":\"transporte\",\"name\":\"Ingeniería del Transporte\",\"color\":\"#4c6782\",\"icon\":\"truck\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 2C\",\"folder\":\"99 Archivo general/Carpetas anteriores/Ingeniería del Transporte\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206217\",\"links\":[],\"font\":\"serif\"},{\"id\":\"instalaciones\",\"name\":\"Instalaciones Industriales I\",\"color\":\"#9a6100\",\"icon\":\"factory\",\"professor\":\"\",\"room\":\"\",\"period\":\"2026-2027 · 2C\",\"folder\":\"99 Archivo general/Carpetas anteriores/Instalaciones Industriales I\",\"campusURL\":\"https://aulaglobal.uc3m.es/course/view.php?id=206225\",\"links\":[],\"font\":\"serif\"}],\"standardsChatURL\":\"https://chatgpt.com/g/g-p-6abd6b1dcc1c8191836f02d00f0d350f/project\",\"groups\":{}} -->\n",
   "subjects": [
@@ -208,6 +208,20 @@
         "due": ""
       },
       "title": "Perico",
+      "lane": "Entrada"
+    },
+    {
+      "id": "7dcb28d1-6b70-4e98-b08a-48c613b4fd7c",
+      "checked": false,
+      "meta": {
+        "id": "7dcb28d1-6b70-4e98-b08a-48c613b4fd7c",
+        "area": "Ingeniería Estructural",
+        "areas": [
+          "Ingeniería Estructural"
+        ],
+        "due": ""
+      },
+      "title": "Pruebjj",
       "lane": "Entrada"
     }
   ],
