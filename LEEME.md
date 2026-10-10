@@ -34,3 +34,7 @@ Los dos PDF de más de 100 MB permanecen solo en Obsidian. El material publicado
 ## Asistente académico
 
 La pestaña **Asistente IA** usa las fuentes académicas, horario, calendario y estado del panel. Solo adjunta apuntes, informes, JSON, CSV, TXT o TEX cuando se seleccionan expresamente; los PDF no se envían de forma automática. Los cambios propuestos se validan y se muestran antes de aplicarlos a la capa editable. La clave de Gemini se conserva solo durante la sesión web y no entra en Git.
+
+## Correo académico
+
+El [agente privado de correo](email-agent/README.md) prepara una revisión diaria de Gmail con Gemini y guarda las evidencias y propuestas en Drive privado. La pestaña **Correo académico** importa `propuestas.json` localmente, permite aceptar o descartar cada hecho y sincroniza los aceptados con el JSON académico del Centro. El correo completo, los identificadores de mensaje y la clave de Gemini no se publican en GitHub Pages.
