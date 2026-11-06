@@ -30,7 +30,7 @@ vm.runInContext(source.slice(source.indexOf('const studySession='),source.indexO
 const api=sandbox.api;
 assert.deepEqual(Array.from(api.studyFiles(course.id),f=>f.name),['1 tema.pdf','2 tema.pdf','3 tema.pdf','4 tema.pdf','5 tema.pdf','7 tema.pdf','8 tema.pdf','10 tema.pdf']);
 const ui=new Element('main');ui.anchor=true;api.study(ui);
-const checkboxes=()=>made.filter(n=>n.tag==='input'&&n.type==='checkbox'&&n.connected());
+const checkboxes=()=>made.filter(n=>n.tag==='input'&&n.type==='checkbox'&&n.attributes['data-study-file']==='true'&&n.connected());
 assert.equal(checkboxes().length,8);
 for(const check of checkboxes()){check.checked=true;check.onchange()}
 assert.equal(api.studyQueue(course.id).length,8);

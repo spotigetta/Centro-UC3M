@@ -5,7 +5,7 @@ const table=Array.from({length:256},(_,n)=>{for(let i=0;i<8;i++)n=n&1?0xedb88320
 function crc32(data){let n=0xffffffff;for(const byte of data)n=table[(n^byte)&255]^(n>>>8);return(n^0xffffffff)>>>0}
 function packageExtension(write=true){
   const manifest=JSON.parse(fs.readFileSync(path.join(source,'manifest.json'),'utf8'));
-  if(manifest.manifest_version!==3||!manifest.side_panel?.default_path)throw Error('La extensión necesita manifest v3 y panel lateral');
+  require('./validate-edge-manifest.cjs')(manifest);
   const entries=[];
   function walk(dir,prefix=''){
     for(const item of fs.readdirSync(dir,{withFileTypes:true}).sort((a,b)=>a.name.localeCompare(b.name,'en'))){

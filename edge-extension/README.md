@@ -4,11 +4,13 @@ Esta extensión conserva una biblioteca por asignatura en el panel lateral derec
 
 ## Instalación local
 
+La versión 1.0.1 corrige la política CSP que impedía cargar la extensión. Para instalarla usa «Cargar descomprimida», no «Empaquetar extensión». No necesitas crear ni seleccionar una clave privada. Si ya figura instalada, pulsa «Recargar» en su ficha después de actualizar estos archivos.
+
 1. Abre `edge://extensions` y activa el modo de desarrollador.
 2. Pulsa «Cargar descomprimida» y elige esta carpeta `edge-extension`, que contiene `manifest.json`.
 3. En el menú de extensiones de Edge fija «Centro UC3M: estudio con PDF» para tenerlo accesible.
 4. Pulsa la extensión. Elige una asignatura y pulsa «Abrir chat de la asignatura». El proyecto de ChatGPT requiere tu sesión habitual.
-5. Usa «Añadir PDF», «Añadir carpeta» o arrastra varios PDF desde el explorador al panel. Se ordenan por nombre y numeración. Cambia entre ellos con la lista; el chat permanece abierto. Puedes ampliar el panel arrastrando su borde izquierdo.
+5. Usa «Añadir PDF», «Añadir carpeta» o arrastra varios PDF desde el explorador al panel. La biblioteca se presenta como un árbol de carpetas, con orden numérico y casillas para seleccionar documentos o carpetas completas. Pulsa el nombre de un PDF para leerlo; el árbol permanece abierto y el chat sigue en su pestaña. Puedes ampliar el panel arrastrando su borde izquierdo.
 
 Si abres material desde la pestaña Estudio del Centro, pulsa «Abrir en Edge» para enviar la selección a la extensión. Si Edge impide abrir automáticamente el panel por las reglas de gesto de usuario, la selección queda preparada: pulsa la extensión para recuperarla. Tras instalar o actualizar la extensión, recarga el Centro antes de usar la conexión.
 
