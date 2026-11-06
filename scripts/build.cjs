@@ -10,10 +10,11 @@ if(path.relative(root,out)!=='dist')throw Error('Destino de compilación fuera d
 const checkOnly=process.argv.includes('--check');
 const compatRoot=process.argv.includes('--compat-root');
 const noMaterial=process.argv.includes('--without-material');
-const required=['index.html','app.js','styles.css','unified.css','sw.js','shared/academic-core.js','shared/overview.js','shared/markdown.js','shared/course-art.js','shared/week-plan.js'];
+const edgeExtension=require('./package-edge-extension.cjs')(!checkOnly);
+const required=['index.html','app.js','styles.css','unified.css','sw.js','shared/academic-core.js','shared/overview.js','shared/markdown.js','shared/course-art.js','shared/week-plan.js','shared/view-state.js','shared/mail-kanban.js','shared/gmail-review.js'];
 for(const file of required)if(!fs.statSync(path.join(source,file)).isFile())throw Error('Falta src/'+file);
 const vm=require('node:vm');
-const browserBundle=['shared/academic-core.js','shared/overview.js','shared/markdown.js','shared/course-art.js','shared/week-plan.js','app.js'].map(file=>fs.readFileSync(path.join(source,file),'utf8')).join('\n');
+const browserBundle=['shared/academic-core.js','shared/overview.js','shared/markdown.js','shared/course-art.js','shared/week-plan.js','shared/view-state.js','shared/mail-kanban.js','shared/gmail-review.js','app.js'].map(file=>fs.readFileSync(path.join(source,file),'utf8')).join('\n');
 new vm.Script(browserBundle,{filename:'centro-uc3m-browser.js'});
 const state=JSON.parse(fs.readFileSync(data,'utf8'));
 if(state.version!==3||!Array.isArray(state.subjects)||!Array.isArray(state.files))throw Error('data/state.json no tiene el formato esperado');
@@ -32,8 +33,9 @@ for(const entry of state.files){
 }
 if(materialBytes>1000*1024*1024)throw Error('El material supera 1 GiB; revisa el tamaño del sitio antes de publicarlo');
 const hash=crypto.createHash('sha256');
-for(const file of ['app.js','styles.css','unified.css','index.html','shared/academic-core.js','shared/overview.js','shared/markdown.js','shared/course-art.js','shared/week-plan.js'])hash.update(fs.readFileSync(path.join(source,file)));
+for(const file of required)hash.update(fs.readFileSync(path.join(source,file)));
 hash.update(fs.readFileSync(data));
+hash.update(edgeExtension.archive);
 const buildId=hash.digest('hex').slice(0,12);
 if(checkOnly){console.log(`Build comprobado: ${state.subjects.length} asignaturas, ${materialCount} archivos, ${(materialBytes/1024/1024).toFixed(1)} MiB, versión ${buildId}.`);process.exit(0)}
 if(compatRoot){
@@ -41,7 +43,7 @@ if(compatRoot){
   fs.copyFileSync(path.join(source,'styles.css'),path.join(root,'styles.css'));
   fs.copyFileSync(path.join(source,'unified.css'),path.join(root,'unified.css'));
   fs.mkdirSync(path.join(root,'shared'),{recursive:true});
-  for(const file of ['academic-core.js','overview.js','markdown.js','course-art.js','week-plan.js'])fs.copyFileSync(path.join(source,'shared',file),path.join(root,'shared',file));
+  for(const file of ['academic-core.js','overview.js','markdown.js','course-art.js','week-plan.js','view-state.js','mail-kanban.js','gmail-review.js'])fs.copyFileSync(path.join(source,'shared',file),path.join(root,'shared',file));
   fs.writeFileSync(path.join(root,'sw.js'),fs.readFileSync(path.join(source,'sw.js'),'utf8').replaceAll('__UC3M_BUILD__',buildId));
   console.log(`Raíz compatible actualizada: versión ${buildId}.`);
   process.exit(0);
@@ -50,7 +52,7 @@ fs.rmSync(out,{recursive:true,force:true});
 fs.mkdirSync(out,{recursive:true});
 function copyTree(from,to){for(const item of fs.readdirSync(from,{withFileTypes:true})){const src=path.join(from,item.name),dst=path.join(to,item.name);if(item.isDirectory()){fs.mkdirSync(dst,{recursive:true});copyTree(src,dst)}else if(item.isFile())fs.copyFileSync(src,dst);else throw Error('Enlace o archivo especial no permitido: '+src)}}
 copyTree(source,out);
-for(const file of ['manifest.webmanifest','icon.svg','logo-uc3m.png','.nojekyll'])fs.copyFileSync(path.join(root,file),path.join(out,file));
+for(const file of ['manifest.webmanifest','icon.svg','logo-uc3m.png','.nojekyll','edge-extension.zip'])fs.copyFileSync(path.join(root,file),path.join(out,file));
 fs.mkdirSync(path.join(out,'data'),{recursive:true});
 fs.copyFileSync(data,path.join(out,'data','state.json'));
 const worker=path.join(out,'sw.js');

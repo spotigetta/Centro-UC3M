@@ -1,3 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 .githooks/* text eol=lf
+# Preserve vendored PDF.js resources exactly, including binary CMaps.
+edge-extension/vendor/** -text
+edge-extension.zip -text

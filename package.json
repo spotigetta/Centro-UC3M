@@ -4,6 +4,9 @@
   "private": true,
   "description": "Aplicación JavaScript del Centro UC3M para Obsidian y GitHub Pages",
   "scripts": {
+    "test:study": "node scripts/test-study-library.cjs && node scripts/test-edge-study.cjs && node scripts/test-study-integration.cjs",
+    "test:mail": "node scripts/test-mail-kanban.cjs && node scripts/test-gmail-review.cjs && node scripts/test-mail-integration-review.cjs",
+    "test:mail:obsidian": "node scripts/test-obsidian-mail.cjs",
     "check": "node --check src/app.js && node --check src/shared/academic-core.js && node --check src/shared/overview.js && node --check src/shared/course-art.js && node --check src/shared/week-plan.js && node scripts/test-week-plan.cjs && node scripts/build.cjs --check",
     "build": "node scripts/build.cjs",
     "deploy": "node scripts/deploy-branch.cjs",
